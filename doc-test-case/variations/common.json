@@ -1,0 +1,26 @@
+{
+	"components": {
+		"head" : [{
+			"path": "views/ribbon.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}, {
+			"path": "views/header.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}],
+		"footer" : [{
+			"path": "views/sn-share.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}, {
+			"path": "views/footer.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}]
+	}
+}

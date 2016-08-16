@@ -1,0 +1,21 @@
+		</div>
+		<script src="./assets/systemjs/dist/system.js"></script>
+		<script>
+			/* global System */
+			window.testCase = true;
+			System.config({
+				defaultJSExtensions: true,
+				baseURL: "<%= urlBasePath %>",
+				transpiler: "traceur",
+				map: {
+    				"traceur": "./assets/traceur/bin/traceur",
+    				"jquery": "./assets/jquery/dist/jquery",
+    				"owlcarousel": "./scripts/lib/owl.carousel",
+    				"throttle-debounce": "./scripts/lib/throttle-debounce",
+  				}
+			});
+
+			System.import("./scripts/common");
+		</script>
+	</body>
+</html>

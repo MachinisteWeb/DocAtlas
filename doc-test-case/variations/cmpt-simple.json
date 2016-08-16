@@ -1,0 +1,380 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "simple",
+				"design": "simple",
+				"behaviors": "module-munchkin-ws.ui.Simple"
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/homepage/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/homepage/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/default/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/default/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"variationClass": "as-toggles",
+							"theme": "default",
+							"itemsClass": {
+								"item1": "is-displayed"
+							},
+							"components": {
+								"before": [{
+									"path": "../variations/product/tabs-1.htm"
+								}],
+								"item1": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"variationClass": "is-displayed",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-1.htm"
+											}]
+										}
+									}
+								}],
+								"item2": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-2.htm"
+											}]
+										}
+									}
+								}],
+								"item3": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-3.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"variationClass": "as-toggles",
+							"theme": "default",
+							"itemsClass": {
+								"item1": "is-displayed"
+							},
+							"components": {
+								"before": [{
+									"path": "../variations/product/tabs-1.htm"
+								}],
+								"item1": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"variationClass": "is-displayed",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-1.htm"
+											}]
+										}
+									}
+								}],
+								"item2": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-2.htm"
+											}]
+										}
+									}
+								}],
+								"item3": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-3.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"before": [{
+									"path": "../variations/product/tabs-2.htm"
+								}],
+								"item1": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"variationClass": "as-toggles",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-multiple.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"before": [{
+									"path": "../variations/product/tabs-2.htm"
+								}],
+								"item1": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"variationClass": "as-toggles",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-multiple.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"variationClass": "as-separator",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/products/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"variationClass": "as-separator",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/products/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/data-3.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/data-3.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

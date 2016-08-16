@@ -1,0 +1,79 @@
+@import "variables"
+
+base()
+    & .single
+        column(1, 1, gutter)
+        margin-left gutter
+        margin-right gutter
+        display inline-block
+        vertical-align top
+        text-align left
+
+        @media (min-width: screen-sm)
+            column(1, 3, gutter)
+
+/**
+ * Invitation to go somewhere on the website.
+ * @component .call-to-action
+ * @example <div class="ui call-to-action">
+ *     <!-- content -->
+ * </div>
+ */
+.call-to-action
+    &--inner
+        container-max()
+        clear-left()
+        padding gutter
+
+    .multiple
+        font-size 0
+        margin 0
+        padding 0
+        list-style-type none
+
+    .single
+        padding-top 15px
+
+    h1
+        text-overflow ellipsis
+        overflow hidden
+        century-gothic()
+        font-weight bold
+        text-transform uppercase
+        font-size 4.5rem
+        color #2c1200
+
+    h2
+        hlmt-rounded()
+        font-size 3.5rem
+        color #2c1200
+
+    /**
+     * Display item in rows by line of 3 items.
+     * @type {variation}
+     * @name .as-group
+     * @memberOf .call-to-action
+     * @example <div class="ui call-to-action as-group">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-group
+        base()
+        .multiple
+            text-align left
+
+    /**
+     * Display item in rows by line of 3 items and center non full line.
+     * @type {variation}
+     * @name .as-group-center
+     * @memberOf .call-to-action
+     * @example <div class="ui call-to-action as-group-center">
+     *     <div class="component">
+     *         <!-- content -->
+     *     </div>
+     * </div>
+     */
+    &.as-group-center
+        base()
+        .multiple
+            text-align center

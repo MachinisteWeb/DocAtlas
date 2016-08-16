@@ -1,0 +1,1 @@
+jsdoc -u ./documentation/markdown/design/readus/ -d ../webapp/src/documentation/design/ -c ./documentation/templates/config/css.config.json ./documentation/markdown/design/README.md --private -t ./documentation/templates/css

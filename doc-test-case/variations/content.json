@@ -1,0 +1,44 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/navigation.htm",
+			"variation": {
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/content/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/hero.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/data-2.htm"
+								}]
+							}
+						}
+					}, {
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/data-1.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

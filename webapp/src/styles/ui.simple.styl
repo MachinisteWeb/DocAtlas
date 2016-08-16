@@ -1,0 +1,91 @@
+@import "variables"
+
+/**
+ * Simple HTML content.
+ * @component .simple
+ * @example <div class="ui simple">
+ *     <!-- content -->
+ * </div>
+ */
+ .simple
+    &--inner
+        container-max()
+        clear-left()
+        padding 15px
+
+    .multiple
+        margin 0
+        padding 0
+        list-style-type none
+
+    h1, h2
+        margin-top 30px
+        margin-bottom 15px
+        font-size 3.4rem
+        hlmt-rounded()
+        color: #2c1200
+
+        @media (min-width: screen-sm)
+            font-size 6rem
+
+    h3
+        font-size 3.4rem
+        hlmt-rounded()
+
+    /**
+     * Mask all part that not have the `is-displayed` class.
+     * @type {variation}
+     * @name .as-toggles
+     * @memberOf .simple
+     * @example <div class="ui simple as-toggles">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-toggles
+
+        /**
+         * Each separate content in case of multiple content.
+         * @component .simple--content
+         * @example <div class="simple--content">
+         *     <!-- content -->
+         * </div>
+         * @partof .simple
+         */
+        & ^[0]--content
+            display none
+
+            /**
+             * Show a part with the variation `.as-toggles` class on `.simple` component.
+             * @type {state}
+             * @name .is-displayed
+             * @memberOf .simple--content
+             * @example <div class="simple--content is-displayed">
+             *     <!-- content -->
+             * </div>
+             */
+            &.is-displayed
+                display: block
+
+    /**
+     * Place a grey bar separator to bottom.
+     * @type {variation}
+     * @name .as-separator
+     * @memberOf .simple
+     * @example <div class="ui simple as-separator">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-separator ^[0]--inner
+        border-bottom 1px solid #e2e2e2
+        padding-bottom 15px
+
+    /**
+     * Allow the Tabs mechanism to work for senders.
+     * @pattern .simple-tabs
+     * @example <p class="tabs simple-tabs no-margin">
+     *     <span class="btn btn-primary is-active">Overview</span>
+     *     <span class="btn btn-primary">Feeding Guide</span>
+     *     <span class="btn btn-primary">Composition</span>
+     * </p>
+     * .simple-tabs
+     */

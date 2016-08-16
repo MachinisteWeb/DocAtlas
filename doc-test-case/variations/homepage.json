@@ -1,0 +1,42 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/hero.htm",
+						"variation": {
+							"variationClass": "as-carousel",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/homepage/data-2.htm"
+								}]
+							}
+						}
+					}, {
+						"path": "views/simple.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/homepage/data-1.htm"
+								}]
+							}
+						}
+					}, {
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"small": true,
+							"variationClass": "as-group",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

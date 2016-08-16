@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: lib/shortcuts.less</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: lib/shortcuts.less</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Apply a FontAwesome icon on a Semantic element and hide the semantic content.
+ * @function .create-icon
+ * @param {string} @class - To which class apply the icon.
+ * @param {number} @value - What is the icon to apply.
+ * @example &lt;!-- Html -->
+ * &lt;div class="ui share">
+ *     &lt;!-- ... -->
+ *     &lt;a href class="facebook">&lt;span>Facebook&lt;/span>&lt;/a>
+ *     &lt;!-- ... -->
+ * &lt;/div>
+ * // Less
+ * .share {
+ *     .create-icon(e("facebook"), @fa-var-facebook);
+ * }
+ */
+.create-icon(@class, @value) {
+	.@{class} {
+		> span {display: none;}
+		.fa-icon();
+		&amp;:before {
+			content: @value;
+		}
+	}
+}
+
+/**
+ * Set the font size in px and just after in rem with rapport 10px == 1rem.
+ * @function .font-size
+ * @param {number} @sizeValue - Set the size in rem (will be auto convert in px).
+ */
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}
+
+
+/**
+ * Allow `width` to get and set the `width + padding-left + padding-right`
+ * and `height` to get and set the `height + padding-left + padding-right`
+ * value on all markup.
+ * @mixin .box-sizing-border-box
+ */
+.box-sizing-border-box {
+	* {
+	 	-webkit-box-sizing: border-box;
+	  	   -moz-box-sizing: border-box;
+	   		    box-sizing: border-box;
+    }
+}
+
+/**
+ * Avoid floating Grid HTMLElement to float on next HTMLElement.
+ * @mixin .clear-left
+ */
+.clear-left {
+	&amp;:after {
+		content: "";
+		display: block;
+		clear: left;
+	}
+}
+
+
+/**
+ * A shortcut for all prefixe of `transform: @value;`.
+ * @function .transform
+ * @param {string} @value - Set a transformation directive.
+ */
+.transform(@value) {
+	-webkit-transform: @value;
+	   -moz-transform: @value;
+		-ms-transform: @value;
+		 -o-transform: @value;
+			transform: @value;
+}
+
+/**
+ * A shortcut for all prefixe of `transition: @value;`.
+ * @function .transform
+ * @param {string} @value - Set a transition directive.
+ */
+.transition(@value) {
+	-webkit-transition: @value;
+	   -moz-transition: @value;
+	    -ms-transition: @value;
+	     -o-transition: @value;
+	        transition: @value;
+}
+
+/**
+ * A shortcut for all prefixe of `transform: rotate(@value);`.
+ * @function .rotate
+ * @param {string} @value - Set the offset of rotation.
+ */
+.rotate(@value) {
+	-webkit-transform: rotate(@value);
+	   -moz-transform: rotate(@value);
+		-ms-transform: rotate(@value);
+		 -o-transform: rotate(@value);
+			transform: rotate(@value);
+}
+
+/**
+ * A shortcut for all prefixe of `transform: translateX(@value);`.
+ * @function .translate-X
+ * @param {string} @value - Set the offset of translation.
+ */
+.translate-x(@value) {
+	-webkit-transform: translateX(@value);
+	   -moz-transform: translateX(@value);
+		-ms-transform: translateX(@value);
+		 -o-transform: translateX(@value);
+			transform: translateX(@value);
+}
+
+/**
+ * A shortcut for all prefixe of `transform: translateY(@value);`.
+ * @function .translate-y
+ * @param {string} @value - Set the offset of translation.
+ */
+.translate-y(@value) {
+	-webkit-transform: translateY(@value);
+	   -moz-transform: translateY(@value);
+		-ms-transform: translateY(@value);
+		 -o-transform: translateY(@value);
+			transform: translateY(@value);
+}
+
+/**
+ * A shortcut for all prefixe of `transform: translate(@value, @valueY)`.
+ * @function .translate-xy
+ * @param {string} @value - Set the offset of X translation.
+ * @param {string} @valueY - Set the offset of Y translation.
+ */
+.translate-xy(@value, @valueY) {
+	-webkit-transform: translate(@value, @valueY);
+	   -moz-transform: translate(@value, @valueY);
+		-ms-transform: translate(@value, @valueY);
+		 -o-transform: translate(@value, @valueY);
+			transform: translate(@value, @valueY);
+}
+
+/**
+ * Avoid transformation.
+ * @mixin .transform-none
+ */
+.transform-none {
+	-webkit-transform: none;
+	   -moz-transform: none;
+		-ms-transform: none;
+		 -o-transform: none;
+			transform: none;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Design Documentation</a></h2><h3>Externals</h3><ul><li><a href="external-Bootstrap.html">Bootstrap</a></li><li><a href="external-FontAwesome.html">FontAwesome</a></li></ul><h3>Patterns</h3><ul><li><a href="btn.html">.btn</a></li><li><a href="btn-block.html">.btn-block</a></li><li><a href="btn-default.html">.btn-default</a></li><li><a href="btn-green.html">.btn-green</a></li><li><a href="btn-lg.html">.btn-lg</a></li><li><a href="btn-link.html">.btn-link</a></li><li><a href="btn-primary.html">.btn-primary</a></li><li><a href="century-gothic.html">.century-gothic</a></li><li><a href="dropdown.html">.dropdown</a></li><li><a href="hlmt-rounded.html">.hlmt-rounded</a></li><li><a href="img-responsive.html">.img-responsive</a></li><li><a href="no-margin.html">.no-margin</a></li><li><a href="p-margin.html">.p-margin</a></li><li><a href="pull-left.html">.pull-left</a></li><li><a href="pull-right.html">.pull-right</a></li><li><a href="share-facebook.html">.share-facebook</a></li><li><a href="share-google-plus.html">.share-google-plus</a></li><li><a href="share-instagram.html">.share-instagram</a></li><li><a href="share-vk.html">.share-vk</a></li><li><a href="share-youtube.html">.share-youtube</a></li><li><a href="simple-tabs.html">.simple-tabs</a></li><li><a href="tabs.html">.tabs</a></li><li><a href="text-center.html">.text-center</a></li><li><a href="text-justify.html">.text-justify</a></li><li><a href="text-left.html">.text-left</a></li><li><a href="text-right.html">.text-right</a></li></ul><h3>Mixins</h3><ul><li><a href="box-sizing-border-box.html">.box-sizing-border-box</a></li><li><a href="clear-left.html">.clear-left</a></li><li><a href="transform-none.html">.transform-none</a></li></ul><h3>Components</h3><ul><li><a href="call-to-action.html">.call-to-action</a></li><li><a href="footer.html">.footer</a></li><li><a href="header.html">.header</a></li><li><a href="header--buy.html">.header--buy</a></li><li><a href="header--navigation.html">.header--navigation</a></li><li><a href="header--navigation--item.html">.header--navigation--item</a></li><li><a href="hero.html">.hero</a></li><li><a href="navigation.html">.navigation</a></li><li><a href="product.html">.product</a></li><li><a href="product--image.html">.product--image</a></li><li><a href="ribbon.html">.ribbon</a></li><li><a href="simple.html">.simple</a></li><li><a href="slot.html">.slot</a></li><li><a href="simple--content.html">.simple--content</a></li><li><a href="slot--item.html">.slot--item</a></li><li><a href="sn-share.html">.sn-share</a></li><li><a href="timeline.html">.timeline</a></li><li><a href="where-to-buy.html">.where-to-buy</a></li></ul><h3>Globals</h3><ul><li><a href="global.html#.create-icon">.create-icon</a></li><li><a href="global.html#.font-size">.font-size</a></li><li><a href="global.html#.rotate">.rotate</a></li><li><a href="global.html#.transform">.transform</a></li><li><a href="global.html#.translate-X">.translate-X</a></li><li><a href="global.html#.translate-xy">.translate-xy</a></li><li><a href="global.html#.translate-y">.translate-y</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue Aug 16 2016 15:48:09 GMT+0200 (Paris, Madrid (heure d’été))
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import "variables"
+
+/**
+ * The Munchkin social Networks share.
+ * @component .sn-share
+ * @example <div class="ui sn-share">
+ *     <!-- content -->
+ * </div>
+ */
+.sn-share
+    background-color rgba(221, 232, 253, 0.5)
+
+    &--inner
+        container-max()
+        clear-left()
+        padding-left gutter
+        padding-right gutter
+        position relative
+        min-height 40px
+        z-index 2
+
+    &--navigation
+        float left
+        column(3, 4, gutter)
+        box-sizing border-box
+        padding 0
+
+    &--logo
+        box-sizing border-box
+        float left
+        column(1, 4, gutter)
+        padding 0
+        margin-top 12px
+        text-align right
+
+        img
+            width auto
+            max-width 75px
+
+        @media (min-width: screen-sm)
+            img
+                max-width 90px
+
+    &--items
+        margin 0
+        padding 20px 0
+        list-style-type none
+
+    &--item
+        display inline-block
+        & + .sn-share--item
+            margin-left 40px
+
+    a
+        color #2c1200
+        font-size 2rem
+
+        @media (min-width: screen-sm)
+            font-size 2.4rem
+
+    /**
+     * The white transparency design for the share component without title only for desktop.
+     * @type {variation}
+     * @name .as-alternative
+     * @memberOf .sn-share
+     * @example <div class="ui sn-share as-alternative">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-alternative
+        display none
+        background-color rgba(255, 255, 255, 0.8)
+
+        .sn-share--logo
+            display none
+
+        .sn-share--navigation
+            float left
+            column(1, 1, gutter);
+            text-align right
+            padding 0
+
+        .sn-share--items
+            padding 15px
+
+        @media (min-width: screen-sm)
+            display block
+
+    /**
+     * Apply a 10px 50px padding on the component.
+     * @type {variation}
+     * @name .with-alternative-padding
+     * @memberOf .sn-share
+     * @example <div class="ui sn-share as-alternative with-alternative-padding">
+     *     <!-- content -->
+     * </div>
+     */
+    &.with-alternative-padding
+        .sn-share--items
+            padding 10px 50px
+
+    /**
+     * The white transparency design for the share component without title only for mobile.
+     * @type {variation}
+     * @name .as-complementary
+     * @memberOf .sn-share
+     * @example <div class="ui sn-share as-complementary">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-complementary
+        background-color rgba(255, 255, 255, 0.8)
+
+        .sn-share--logo
+            display none
+
+        .sn-share--navigation
+            box-sizing border-box
+            text-align center
+            padding 0
+            float left
+            column(1, 1, gutter)
+
+        @media (min-width: screen-sm)
+            display none

@@ -1,0 +1,140 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "product",
+				"design": "product",
+				"behaviors": "module-munchkin-ws.ui.Product"
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"variationClass": "as-small",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"variationClass": "as-small",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/product.htm",
+						"variation": {
+							"variationClass": "as-small",
+							"paragraphs": 0,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/product.htm",
+						"variation": {
+							"variationClass": "as-small",
+							"paragraphs": 0,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"variationClass": "as-small",
+							"paragraphs": 4,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"variationClass": "as-small",
+							"paragraphs": 4,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

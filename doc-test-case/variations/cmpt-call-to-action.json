@@ -1,0 +1,131 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "call-to-action",
+				"design": "call-to-action"
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group-center",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group-center",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group",
+							"small": true,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group",
+							"small": true,
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

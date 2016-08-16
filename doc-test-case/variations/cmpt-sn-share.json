@@ -1,0 +1,109 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "sn-share",
+				"design": "sn-share"
+			}
+		}, {
+			"path": "views/sn-share.htm",
+			"variation": {
+				"variationClass": "as-alternative",
+				"theme": "default"
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-alternative",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-complementary",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-complementary",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-alternative",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-alternative",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/sn-share.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

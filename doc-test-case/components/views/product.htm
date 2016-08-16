@@ -1,0 +1,41 @@
+							<div class="ui product<%- (component && component.variationClass) ? " " + component.variationClass : "" %>">
+								<div class="product--inner">
+									<div class="product--image<%- (component && component.withCarousel) ? " " + component.withCarousel : "" %>">
+										<p><img class="img-responsive" src="./content/images/pack-big.png" alt="Pack Big"></p>
+										<% if (component && component.withCarousel) { %>
+										<p><img class="img-responsive" src="./content/images/pack-big.png" alt="Pack Big"></p>
+										<p><img class="img-responsive" src="./content/images/pack-big.png" alt="Pack Big"></p>
+										<p><img class="img-responsive" src="./content/images/pack-big.png" alt="Pack Big"></p>
+										<% } %>
+									</div>
+									<div class="product--presentation">
+										<h1 class="no-margin">Munchkin 2</h1>
+										<h2 class="p-margin">Unnatural Axe</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, natus facere impedit, magni maiores officia, necessitatibus accusamus sed distinctio nemo deserunt quasi temporibus aliquid dolorum nesciunt neque nostrum qui? Atque..</p>
+
+										<% var paragraphs = (component && component.paragraphs !== undefined) ? component.paragraphs : 1 %>
+										<% for (var i = 0; i < paragraphs; i++) { %>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem impedit nulla ratione! Consequatur mollitia dolore autem sequi tenetur quo, magni reiciendis quia ipsam, beatae, doloremque. Facilis laborum cupiditate excepturi nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sed dolorum nisi quisquam, sunt aut possimus inventore placeat nemo labore veritatis illo voluptates at quis exercitationem, numquam. Reiciendis, totam, commodi!.</p>
+										<% } %>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="dropdown">
+													<p>
+														<button class="btn btn-default btn-block dropdown-toggle btn-green">
+															Buy Now
+															<span class="caret"></span>
+														</button>
+													</p>
+													<ul class="dropdown-menu dropdown-green">
+														<li><a href="" class="btn btn-primary btn-green">with Color</a></li>
+														<li><a href="" class="btn btn-primary btn-green">without Color</a></li>
+													</ul>
+												</div>
+											</div>
+											<p class="col-sm-6">
+												<a href="" class="btn btn-default btn-block btn-green">Where to Buy</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>

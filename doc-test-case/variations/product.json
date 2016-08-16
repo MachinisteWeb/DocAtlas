@@ -1,0 +1,91 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/navigation.htm",
+			"variation": {
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/product/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-alternative with-alternative-padding",
+							"theme": "default"
+						}
+					}, {
+						"path": "views/product.htm",
+						"variation": {
+							"withCarousel": "as-carousel",
+							"variationClass": "as-small",
+							"theme": "default"
+						}
+					}, {
+						"path": "views/sn-share.htm",
+						"variation": {
+							"variationClass": "as-complementary",
+							"theme": "default"
+						}
+					}, {
+						"path": "views/slot.htm",
+						"variation": {
+							"variationClass": "as-toggles",
+							"theme": "default",
+							"itemsClass": {
+								"item1": "is-displayed"
+							},
+							"components": {
+								"before": [{
+									"path": "../variations/product/tabs-1.htm"
+								}],
+								"item1": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"variationClass": "is-displayed",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-1.htm"
+											}]
+										}
+									}
+								}],
+								"item2": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-2.htm"
+											}]
+										}
+									}
+								}],
+								"item3": [{
+									"path": "views/simple.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/product/data-3.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

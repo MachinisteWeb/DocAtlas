@@ -1,0 +1,39 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "where-to-buy",
+				"design": "where-to-buy"
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/where-to-buy.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/where-to-buy.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

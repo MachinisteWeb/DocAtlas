@@ -1,0 +1,19 @@
+{
+	"enableIndex": true,
+	"httpPort": 7770,
+ 	"variationsRelativePath": "./variations/",
+	"templatesRelativePath": "./templates/",
+	"componentsRelativePath": "./components/",
+	"controllersRelativePath": "./controllers/",
+	"assetsRelativePath": "../webapp/src/",
+	"commonController": "common.js",
+	"commonVariation": "common.json",
+	"generatesRelativePath": "./dist/",
+ 	"pageNotFound": "/page-inexistante/",
+ 	"httpHostname": "www.lesieur.name",
+	"urlRelativeSubPath": "test-case-atlas",
+	"urlPort": 80,
+	"routes": "routes.json",
+	"enableLess": "less.json",
+	"enableStylus": "stylus.json"
+}

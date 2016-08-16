@@ -1,0 +1,30 @@
+{
+    "source": {
+        "include": [
+            "../webapp/src/styles/lib/shortcuts.less",
+            "../webapp/src/styles/framework.less",
+            "../webapp/src/styles/common.less",
+            "../webapp/src/styles/ui.slot.styl",
+            "../webapp/src/styles/ui.sn-share.styl",
+            "../webapp/src/styles/ui.ribbon.styl",
+            "../webapp/src/styles/ui.header.styl",
+            "../webapp/src/styles/ui.navigation.styl",
+            "../webapp/src/styles/ui.timeline.styl",
+            "../webapp/src/styles/ui.hero.styl",
+            "../webapp/src/styles/ui.call-to-action.styl",
+            "../webapp/src/styles/ui.where-to-buy.styl",
+            "../webapp/src/styles/ui.product.styl",
+            "../webapp/src/styles/ui.simple.styl",
+            "../webapp/src/styles/ui.footer.styl"
+        ],
+        "includePattern": ".+\\.(css|less|styl)(doc)?$"
+    },
+    "plugins": [
+        "commentsOnly",
+        "nowrapSpace",
+        "layoutAliasNamespace",
+        "partofAliasExtends",
+        "componentAliasInterface",
+        "patternAliasClass"
+    ]
+}

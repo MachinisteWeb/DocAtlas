@@ -1,0 +1,17 @@
+{
+    "stylus": [
+		"./styles/ui.slot.less",
+		"./styles/ui.product.styl",
+		"./styles/ui.hero.styl",
+		"./styles/variables.styl",
+		"./styles/ui.sn-share.styl",
+		"./styles/ui.navigation.styl",
+		"./styles/ui.timeline.styl",
+		"./styles/ui.call-to-action.styl",
+		"./styles/ui.simple.styl",
+		"./styles/ui.header.styl",
+		"./styles/ui.footer.styl",
+		"./styles/ui.ribbon.styl",
+		"./styles/ui.where-to-buy.less"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/navigation.htm",
+			"variation": {
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/content/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/timeline.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

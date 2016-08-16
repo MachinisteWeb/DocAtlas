@@ -1,0 +1,27 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "ribbon",
+				"design": "ribbon"
+			}
+		}, {
+			"path": "views/ribbon.htm"
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/ribbon.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

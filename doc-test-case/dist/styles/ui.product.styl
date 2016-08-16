@@ -1,0 +1,101 @@
+@import "variables"
+
+/**
+ * The product presentation.
+ * @component .product
+ * @example <div class="ui product">
+ *     <!-- content -->
+ * </div>
+ */
+.product
+    &--inner
+        container-max()
+        clear-left()
+        padding-top 10px
+
+    &--presentation
+        float left
+        margin-left: gutter
+        margin-right: gutter
+        text-align left
+        column(12, 12, gutter)
+
+        @media (min-width: screen-sm)
+            column(7, 12, gutter)
+
+    h1
+        century-gothic()
+        font-weight bold
+        text-transform uppercase
+        font-size 4.5rem
+        color #2c1200
+
+    h2
+        hlmt-rounded()
+        font-size 4rem
+        color #2c1200
+
+    /**
+     * The place reserved for images.
+     * @component .product--image
+     * @example <div class="product--image">
+     *     <!-- content -->
+     * </div>
+     * @partof .product
+     */
+    &--image
+        float left
+        column(12, 12, gutter)
+        margin-left gutter
+        margin-right gutter
+        margin-bottom gutter
+        text-align center
+
+        @media (min-width: screen-sm)
+            column(5, 12, gutter)
+            padding-bottom 0
+
+        /**
+         * Allow images to be displayed as a carousel.
+         * @type {variation}
+         * @name .as-carousel
+         * @memberOf .product--image
+         * @example <div class="product--image as-carousel">
+         *     <!-- content -->
+         * </div>
+         */
+        &.as-carousel
+            .owl-page
+                box-sizing border-box
+
+                &.active
+                    background-color: #2c1200
+
+                margin 6px
+                border 2px solid #2c1200
+                height 12px
+                width 12px
+                display inline-block
+                background-color transparent
+
+                @media (min-width: screen-sm)
+                    margin 10px
+                    height 20px
+                    width 20px
+
+    /**
+     * Display the text area with less space to the right.
+     * @type {variation}
+     * @name .as-carousel
+     * @memberOf .product--image
+     * @example <div class="product as-small">
+     *     <!-- content -->
+     * </div>
+     */
+    /*&.as-small
+        & ^[0]--presentation
+            column(1, 1, gutter)
+            margin-left gutter
+            margin-right gutter
+            @media (min-width: screen-lg)
+                column(1, 2, gutter)*/

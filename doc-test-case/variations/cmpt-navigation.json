@@ -1,0 +1,191 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "navigation",
+				"design": "navigation"
+			}
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/product/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"variationClass": "as-alternative",
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/product/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"variationClass": "as-alternative",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/content/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"variationClass": "as-centered",
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/product/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"variationClass": "as-centered",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"variationClass": "as-alternative as-centered",
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/product/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"variationClass": "as-alternative as-centered",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/product/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/navigation.htm",
+			"variation": {
+				"variationClass": "as-centered",
+				"theme": "default",
+				"components": {
+					"content": [{
+						"path": "../variations/content/navigation.htm"
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/navigation.htm",
+						"variation": {
+							"variationClass": "as-centered",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/navigation.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

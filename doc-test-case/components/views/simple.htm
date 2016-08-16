@@ -1,0 +1,7 @@
+							<section class="ui simple<%- (component && component.variationClass) ? " " + component.variationClass : "" %>">
+								<div class="simple--inner">
+									<% if (component && component.components && component.components.content) { %>
+										<%- includeComponents('content', component, path) %>
+									<% } %>
+								</div>
+							</section>

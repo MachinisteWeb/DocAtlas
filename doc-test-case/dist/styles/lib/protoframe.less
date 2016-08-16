@@ -1,0 +1,359 @@
+/**
+ * Set on `*` the boxmodel for correct calculation.
+ * @function .box-sizing
+ * @example // Start of custom Less.
+ * .boxSizing();
+ */
+.box-sizing {
+	* {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
+
+/**
+ * Give ability to not let float element to pass.
+ * @mixin .clear
+ */
+.clear {
+	clear: both;
+}
+
+/**
+ * Restaure ability to let float element to pass.
+ * @mixin .unclear
+ */
+.unclear {
+	clear: none;
+}
+
+/**
+ * Transform an element into function.
+ * @mixin .block
+ */
+.block {
+	display: block;
+}
+
+/**
+ * Not allow an element to be more long than the value.
+ * @function .max-width
+ * @param {string} @size - The size max of element.
+ * @example .max-width(768px);
+ */
+.max-width(@size) {
+	max-width: @size;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+ * Write a thing into `before` content. By default the text is in top left.
+ * @function .write
+ * @param {string} @content - What you want write.
+ * @param {string} @position - By default is "none". Set "right", "bottom" or "opposite" to write to other corners.
+ * @example .write("Text in top left");
+ * .write("Text in top left too", "none");
+ * .write("Text in top right", "right");
+ * .write("Text in bottom left", "bottom");
+ * .write("Text in bottom right", "opposite");
+ * .write("Text in top center", "center");
+ * .write("Text in center left", "middle");
+ */
+.write(@content, @position: "left") {
+	position: relative;
+	&:before {
+		z-index: 1000;
+		content: @content;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-weight: bold;
+		padding: 7.5px;
+		color: #ccc;
+		& when (@position = "right") {
+			left: auto;
+			right: 0;
+		}
+		& when (@position = "center") {
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			   -moz-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			     -o-transform: translateX(-50%);
+			        transform: translateX(-50%);
+		}
+		& when (@position = "middle") {
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+		}
+		& when (@position = "bottom") {
+			top: auto;
+			bottom: 0;
+		}
+		& when (@position = "opposite") {
+			top: auto;
+			bottom: 0;
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
+@xs: e("(min-width: 768px)");
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+
+
+.middle {
+	vertical-align: middle;
+}
+
+.text-large {
+	font-size: 2em;
+}
+
+.base {
+	position: relative;
+}
+.invertible {
+	position: relative;
+	float: left;
+}
+
+.list-invisible {
+	margin: 0;
+	vertical-align: top;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nofontsize(@base) {
+	font-size: 0;
+	> * {
+		font-size: @base;
+	}
+}
+
+.cover-middle(@extra: 0) {
+	position: absolute;
+	max-width: none;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	width: 100%;
+	& when not (@extra = 0) {
+		width: calc(~'100% + @{extra}*2');
+		left: 0 - @extra;
+	}
+	height: auto;
+}
+.cover-center(@extra: 0) {
+	position: absolute;
+	max-width: none;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: auto;
+	height: 100%;
+	& when not (@extra = 0) {
+		height: calc(~'100% + @{extra}*2');
+		top: 0 - @extra;
+	}
+}
+
+.column(@number, @all, @extra: -15px) {
+	@pourcent: 100% * (@number / @all);
+    display: inline-block;
+    width: calc(~'@{pourcent} - 15px');
+    & when not (@extra = -15px) {
+		width: calc(~'@{pourcent} + @{extra}');
+	}
+    vertical-align: top;
+}
+
+.left(@number, @all, @extra: 7.5px) {
+	@pourcent: 100% * (@number / @all);
+    margin-left: calc(~'@{pourcent} + 7.5px');
+    & when not (@extra = 7.5px) {
+		margin-left: calc(~'@{pourcent} + @{extra}');
+	}
+}
+
+.right(@number, @all, @extra: 7.5px) {
+	@pourcent: 100% * (@number / @all);
+    margin-right: calc(~'@{pourcent} + 7.5px');
+    & when not (@extra = 7.5px) {
+		margin-right: calc(~'@{pourcent} + @{extra}');
+	}
+}
+
+.push(@number, @all, @extra: 0) {
+	@pourcent: 100% * (@number / @all);
+    right: calc(~'@{pourcent}');
+    & when not (@extra = 0) {
+		right: calc(~'@{pourcent} + @{extra}');
+	}
+}
+
+.pull(@number, @all, @extra: 0) {
+	@pourcent: 100% * (@number / @all);
+    left: calc(~'@{pourcent}');
+    & when not (@extra = 0) {
+		left: calc(~'@{pourcent} + @{extra}');
+	}
+}
+
+.container-full(@state: "none") {
+	& when (@state = "none") {
+		margin: 7.5px;
+		padding: 6.5px;
+	}
+	& when (@state = "plate") {
+		margin: 7.5px;
+		margin: 7.5px;
+		padding-left: 6.5px;
+		padding-right: 6.5px;
+	}
+	border: 1px solid #ccc;
+	width: calc(~'100% - 15px');
+}
+
+.container-hidden(@state: "none") {
+	& when (@state = "none") {
+		margin: 7.5px;
+		padding: 6.5px;
+	}
+	& when (@state = "plate") {
+		margin: 7.5px;
+		margin: 7.5px;
+		padding-left: 6.5px;
+		padding-right: 6.5px;
+	}
+	width: calc(~'100% - 15px');
+	border: 0;
+}
+
+.container-hidden-plate {
+	margin: 0 7.5px;
+	padding: 0 7.5px;
+	width: calc(~'100% - 15px');
+}
+
+.container-invisible {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.plate {
+	margin-top: -15px;
+	margin-bottom: -15px;
+}
+
+.inline-left-list {
+	padding: 7.5px 15px;
+	.text-center;
+	@media (min-width: 768px) {
+		text-align: left;
+		display: inline-block;
+	}
+}
+
+.inline-right-list {
+	padding: 7.5px 15px;
+	.text-center;
+	@media (min-width: 768px) {
+		text-align: right;
+		display: inline-block;
+	}
+}
+
+.inline-left-list {
+	padding: 7.5px 15px;
+	.text-center;
+	@media (min-width: 768px) {
+		text-align: left;
+		display: inline-block;
+	}
+}
+
+.inline-left(@state: "full") {
+	& when (@state = "full"), (@state = "plate") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	& when (@state = "full"), (@state = "condensed") {
+		padding-top: 7.5px;
+		padding-bottom: 7.5px;
+	}
+	& when (@state = "none") {
+		padding: 0;
+	}
+	text-align: left;
+	display: inline-block;
+}
+
+.inline-right(@state: "full") {
+	& when (@state = "full"), (@state = "plate") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	& when (@state = "full"), (@state = "condensed") {
+		padding-top: 7.5px;
+		padding-bottom: 7.5px;
+	}
+	text-align: right;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 7.5px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.line(@adjust: "none") {
+	display: table;
+
+	& when (@adjust = "adjust") {
+		margin-left: -7.5px;
+		margin-right: -7.5px;
+		width: calc(~'100% + 15px');
+	}
+}

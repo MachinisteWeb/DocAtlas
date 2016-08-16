@@ -1,0 +1,559 @@
+/**
+ * @fileOverview Starting point for Cat Chow's Design.
+ * @author Bruno Lesieur
+ * @version 1.0.0
+ * @requires {@link external:Bootstrap}
+ */
+@import (reference) 'variables.less';
+
+@font-face {
+    font-family: "hlmt-rounded";
+    src: url("./fonts/hlmt-rounded.eot?#iefix") format("embedded-opentype"),
+         url("./fonts/hlmt-rounded.woff") format("woff"),
+         url("./fonts/hlmt-rounded.ttf")  format("truetype"),
+         url("./fonts/hlmt-rounded.svg#hlmt-rounded") format("svg");
+}
+/*@font-face {
+    font-family: "Calibri Light";
+    src: url("./fonts/Calibri-Light.eot?#iefix") format("embedded-opentype"),
+         url("./fonts/Calibri-Light.woff") format("woff"),
+         url("./fonts/Calibri-Light.ttf")  format("truetype"),
+         url("./fonts/Calibri-Light.svg#hlmt-rounded") format("svg");
+}*/
+
+/**
+ * Set the Hlmt Rounded.
+ * @pattern .hlmt-rounded
+ * @example <!-- This is a pattern -->
+ * <span class="hlmt-rounded">Hlmt Rounded</span>
+ */
+.hlmt-rounded {
+    .hlmt-rounded;
+}
+
+/**
+ * Set the Century Gothic Font.
+ * @pattern .century-gothic
+ * @example <!-- This is a pattern -->
+ * <span class="century-gothic">Century Gothic</span>
+ */
+.century-gothic {
+    .century-gothic;
+}
+
+/**
+ * Set the text center.
+ * @pattern .text-center
+ * @example <!-- This is a pattern -->
+ * <span class="text-center">I'm center</span>
+ */
+.text-center {
+    .text-center;
+}
+
+/**
+ * Set the text to left.
+ * @pattern .text-left
+ * @example <!-- This is a pattern -->
+ * <span class="text-left">I'm to left</span>
+ */
+.text-left {
+    .text-left;
+}
+
+/**
+ * Set the text to right.
+ * @pattern .text-right
+ * @example <!-- This is a pattern -->
+ * <span class="text-right">I'm to right</span>
+ */
+.text-right {
+    .text-right;
+}
+
+/**
+ * Set the text justify.
+ * @pattern .text-justify
+ * @example <!-- This is a pattern -->
+ * <span class="text-justify">I'm justified</span>
+ */
+.text-justify {
+    .text-justify;
+}
+
+/**
+ * Allow you to set an image as responsive.
+ * @pattern .img-responsive
+ * @example <!-- This is a pattern -->
+ * <img src="..." class="img-responsive">
+ */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/**
+ * Button take all width.
+ * @pattern .btn-block
+ * @example <button class="btn btn-link btn-block">button</button>
+ * <a href="..." class="btn btn-link btn-block">link</a>
+ */
+.btn-block {
+    .btn-block;
+}
+
+/**
+ * Button large.
+ * @pattern .btn-lg
+ * @example <!-- This is a pattern -->
+ * <button class="btn btn-lg">button</button>
+ * <a href="..." class="btn btn-lg">link</a>
+ */
+.btn-lg {
+    .btn-lg;
+}
+
+/**
+ * Button.
+ * @pattern .btn
+ * @example <button class="btn">button</button>
+ * <a href="..." class="btn">link</a>
+ */
+.btn {
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid #2c1200;
+    white-space: nowrap;
+    padding: 5px 13px;
+    font-size: 2rem;
+    line-height: 1.42857143;
+    color: #FFF;
+    background-color: #2c1200;
+    text-transform: uppercase;
+    border-radius: 0;
+    .century-gothic;
+}
+.btn:hover {
+    color: #2c1200;
+    background-color: #fff;
+    border: 2px solid #2c1200;
+    text-decoration: none;
+}
+
+/**
+ * Button blue with uppercase.
+ * @pattern .btn-default
+ * @example <button class="btn btn-default">button</button>
+ * <a href="..." class="btn btn-default">link</a>
+ */
+
+/**
+ * Button green.
+ * @pattern .btn-green
+ * @example <button class="btn btn-default btn-green">button</button>
+ * <a href="..." class="btn btn-default btn-green">link</a>
+ */
+.btn.btn-default.btn-green {
+    background-color: #e4c471;
+    border: 2px solid #e4c471;
+}
+.btn.btn-default.btn-green:hover {
+    color: #e4c471;
+    background-color: #fff;
+    border: 2px solid #e4c471;
+}
+
+/**
+ * Button white.
+ * @pattern .btn-primary
+ * @example <button class="btn btn-primary">button</button>
+ * <a href="..." class="btn btn-primary">link</a>
+ */
+.btn-primary {
+    color: #2c1200;
+    font-size: 2.8rem;
+    @media (min-width: @screen-sm-min) {
+        font-size: 3.6rem;
+    }
+    padding: 5px 13px;
+    border: 2px solid #2c1200;
+    background-color: #FFF;
+    text-transform: none;
+    .hlmt-rounded;
+}
+.btn-primary.is-active,
+.btn-primary:hover {
+    color: #FFF;
+    border: 2px solid #2c1200;
+    background-color: #2c1200;
+}
+
+.btn.btn-primary.btn-green {
+    color: #e4c471;
+    background-color: #fff;
+    border: 2px solid #e4c471;
+}
+.btn.btn-primary.btn-green.is-active,
+.btn.btn-primary.btn-green:hover {
+    color: #fff;
+    background-color: #e4c471;
+    border: 2px solid #e4c471;
+}
+
+/**
+ * Button type link.
+ * @pattern .btn-link
+ * @example <!-- This is a pattern -->
+ * <button class="btn btn-link">button</button>
+ * <a href="..." class="btn btn-link">link</a>
+ */
+.btn-link {
+    border-radius: 0;
+    color: #2c1200;
+    padding: 5px 0;
+    border: 1px solid transparent;
+    font-weight: bold;
+    background-color: transparent;
+}
+.btn-link.is-active,
+.btn-link:hover {
+    color: #2c1200;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.slot .btn-link:hover {
+    opacity: .6;
+    text-decoration: none;
+}
+
+/**
+ * Dropdown Button.
+ * @pattern .dropdown
+ * @example <div class="dropdown">
+ *     <p>
+ *         <button class="btn btn-default dropdown-toggle" type="button">
+ *             Buy Now
+ *             <span class="caret"></span>
+ *         </button>
+ *     </p>
+ *     <ul class="dropdown-menu">
+ *         <li><a href="" class="btn btn-primary">Rich in Chicken</a></li>
+ *         <li><a href="" class="btn btn-primary">Rich in Duck</a></li>
+ *         <li><a href="" class="btn btn-primary">Rich in Salmon</a></li>
+ *     </ul>
+ * </div>
+ */
+.dropdown {
+    .caret {
+        margin-top: -4px;
+    }
+}
+.dropdown-menu {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #2c1200;
+    border-top: 0;
+    border-bottom: 1px solid #2c1200;
+    -webkit-box-shadow: 0;
+       -moz-box-shadow: 0;
+            box-shadow: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+
+    /**
+     * Green Dropdown.
+     * @pattern .btn-green
+     * @example <button class="btn btn-default btn-green">button</button>
+     * <a href="..." class="btn btn-default btn-green">link</a>
+     */
+    &.dropdown-green {
+        border: 2px solid #e4c471;
+        border-top: 0;
+        border-bottom: 1px solid #e4c471;
+
+        .btn-primary:hover,
+        .btn-primary {
+            border-top: 1px solid #e4c471;
+            border-bottom: 1px solid #e4c471;
+            border-left: 0;
+            border-right: 0;
+            font-size: 2.5rem;
+        }
+    }
+
+    .btn-primary:hover,
+    .btn-primary {
+        margin-top: 0;
+        color: #2c1200;
+        border-top: 1px solid #2c1200;
+        border-bottom: 1px solid #2c1200;
+        border-left: 0;
+        border-right: 0;
+        font-size: 2.5rem;
+    }
+    .btn-primary:hover {
+        background-color: #2c1200;
+        color: #fff;
+    }
+}
+
+
+/**
+ * Group all buttons as a tab.
+ * @pattern .tabs
+ * @example <p class="tabs simple-tabs no-margin">
+ *     <span class="btn btn-primary is-active">Overview</span>
+ *     <span class="btn btn-primary">Feeding Guide</span>
+ *     <span class="btn btn-primary">Composition</span>
+ * </p>
+ */
+.tabs-center,
+.tabs {
+    font-size: 0;
+    .btn {
+        margin-top: 0;
+        display: block;
+    }
+    @media (max-width: @screen-xs-max) {
+        .btn.btn-green + .btn.btn-green,
+        .btn + .btn {
+            border-top: 0;
+        }
+    }
+    @media (min-width: @screen-sm-min) {
+        .btn {
+            display: inline-block;
+            padding: 5px 45px;
+        }
+        .btn.btn-green + .btn.btn-green,
+        .btn + .btn {
+            border-left: 0;
+        }
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+/**
+ * Group all buttons as a tab and center it.
+ * @pattern .tabs
+ * @example <p class="tabs-center simple-tabs no-margin">
+ *     <span class="btn btn-primary is-active">Overview</span>
+ *     <span class="btn btn-primary">Feeding Guide</span>
+ *     <span class="btn btn-primary">Composition</span>
+ * </p>
+ */
+.tabs-center {
+    text-align: center;
+    width: 100%;
+}
+
+/**
+ * For an element float to left.
+ * @pattern .pull-left
+ * @example <!-- This is a pattern -->
+ * <span class="pull-left">content</span>
+ */
+.pull-left {
+    .pull-left;
+}
+
+/**
+ * For an element float to right.
+ * @pattern .pull-right
+ * @example <!-- This is a pattern -->
+ * <span class="pull-right">content</span>
+ */
+.pull-right {
+    .pull-right;
+}
+
+
+
+
+
+/* Overload */
+a {
+    color: #2c1200;
+}
+.slot a:hover {
+    opacity: .6;
+    text-decoration: none;
+}
+table {
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #C0C0C0;
+    margin-bottom: 20px;
+}
+tr {
+    background-color: #FEFCFD;
+}
+tbody tr:nth-child(2n - 1) {
+    background-color: #E3E8F1;
+}
+th, td {
+    border: 1px solid #C0C0C0;
+    padding: 10px;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    @media (min-width: @screen-sm-min) {
+        font-size: 1.6rem;
+    }
+}
+body {
+    overflow-x: hidden;
+}
+
+.with-background {
+    background-image: url('./images/main-background-transparency.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.separator {
+    padding: 20px;
+    background-color: #fff;
+    hr {
+        margin: 0;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.code-viewer {
+    .component {
+        .container-max;
+    }
+    &--title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0 #fff;
+        cursor: pointer;
+    }
+    &--code {
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    &--toggle {
+        .code-viewer--code {
+            display: none;
+        }
+        &.is-opened {
+            .code-viewer--code {
+                display: block;
+            }
+        }
+    }
+}
+
+/**
+ * A same margin as normal p.
+ * @pattern .p-margin
+ * @example <h1 class="p-margin">
+ *     Bla bla bla...
+ * </h1>
+ */
+.p-margin {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/**
+ * A same margin as h1 and h2.
+ * @pattern .p-margin
+ * @example <img class="h-margin" src="..." alt="...">
+ */
+.h-margin {
+    margin-top: 40px;
+}
+
+/**
+ * No margin on the item.
+ * @pattern .no-margin
+ * @example <h1 class="no-margin">
+ *     Bla bla bla...
+ * </h1>
+ */
+.no-margin {
+    margin: 0;
+}
+
+/**
+ * Facebook SVG Icon.
+ * @pattern .share-facebook
+ * @example <a href="" class="share-facebook">
+ *     <span>Facebook</span>
+ * </a>
+ */
+.create-icon(e("share-caret-down"), @fa-var-caret-down);
+
+/**
+ * Facebook SVG Icon.
+ * @pattern .share-facebook
+ * @example <a href="" class="share-facebook">
+ *     <span>Facebook</span>
+ * </a>
+ */
+.create-icon(e("share-facebook"), @fa-var-facebook);
+
+/**
+ * Youtube SVG Icon.
+ * @pattern .share-youtube
+ * @example <a href="" class="share-youtube">
+ *     <span>Youtube</span>
+ * </a>
+ */
+.create-icon(e("share-youtube"), @fa-var-youtube);
+
+/**
+ * VK SVG Icon.
+ * @pattern .share-vk
+ * @example <a href="" class="share-vk">
+ *     <span>VKontakte</span>
+ * </a>
+ */
+.create-icon(e("share-vk"), @fa-var-vk);
+
+/**
+ * Instagram Icon for Footer icon list.
+ * @pattern .share-instagram
+ * @example <a href="" class="share-instagram">
+ *     <span>Instagram</span>
+ * </a>
+ */
+.create-icon(e("share-instagram"), @fa-var-instagram);
+
+/**
+ * Instagram Icon for Footer icon list.
+ * @pattern .share-google-plus
+ * @example <a href="" class="share-google-plus">
+ *     <span>Google+</span>
+ * </a>
+ */
+.create-icon(e("share-google-plus"), @fa-var-google-plus);
+.share-facebook,
+.share-youtube,
+.share-vk,
+.share-instagram,
+.share-google-plus {
+    font-size: 2.2rem;
+}

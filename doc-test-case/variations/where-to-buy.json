@@ -1,0 +1,19 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/where-to-buy.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

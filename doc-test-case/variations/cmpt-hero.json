@@ -1,0 +1,108 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "hero",
+				"design": "hero",
+				"behaviors": "module-munchkin-ws.ui.Hero"
+			}
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/hero.htm",
+						"variation": {
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/content/data-2.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"theme": "default",
+							"variationClass": "as-container",
+							"components": {
+								"item1": [{
+									"path": "views/hero.htm",
+									"variation": {
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/content/data-2.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/hero.htm",
+						"variation": {
+							"variationClass": "as-carousel",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/homepage/data-2.htm"
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/slot.htm",
+						"variation": {
+							"theme": "default",
+							"variationClass": "as-container",
+							"components": {
+								"item1": [{
+									"path": "views/hero.htm",
+									"variation": {
+										"variationClass": "as-carousel",
+										"theme": "default",
+										"components": {
+											"content": [{
+												"path": "../variations/homepage/data-2.htm"
+											}]
+										}
+									}
+								}]
+							}
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

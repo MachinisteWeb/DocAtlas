@@ -1,0 +1,10 @@
+<div class="ui code-viewer"<%- (component && component.style) ? " style='" + component.style + "'" : "" %>>
+	<div class="component">
+		<% if (component && component.components && component.components.code) { %>
+			<div class="code-viewer--toggle" onclick="this.classList.toggle('is-opened')">
+				<div class="code-viewer--title">Show / Hide Code</div>
+				<textarea class="code-viewer--code" rows="12"><%- includeComponents('code', component, path) %></textarea>
+			</div>
+	    <% } %>
+	</div>
+</div>

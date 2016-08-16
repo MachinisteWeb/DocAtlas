@@ -1,0 +1,70 @@
+@import "variables"
+
+/**
+ * The Slot système (for multi component).
+ * @component .slot
+ * @example <!-- This is a component because contain `.ui` -->
+ * <div class="ui slot">
+ *     <!-- content -->
+ * </div>
+ */
+.slot
+    &--inner
+        container-max()
+        clear-left()
+        padding 0
+
+        & > ^[0]--before
+            padding 20px
+
+    /**
+     * Limit slot as a page container.
+     * @type {variation}
+     * @name .as-container
+     * @memberOf .slot
+     * @example <div class="ui slot as-container">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-container
+        & ^[0]--inner
+            background-color #FFF
+            @media (min-width: screen-xs)
+                margin-top 30px
+                margin-bottom 30px
+
+    /**
+     * Variation `.as-toggles` to show only certain items.
+     * @type {variation}
+     * @name .as-toggles
+     * @memberOf .slot
+     * @example <div class="slot as-toggles">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-toggles
+        & > ^[0]--inner
+            & > ^[0]--items
+
+                /**
+                 * Each separate Slot Item content.
+                 * @component .slot--item
+                 * @example <div class="slot--item">
+                 *     <!-- content -->
+                 * </div>
+                 * @partof .slot
+                 */
+                & > ^[0]--item
+                    display none
+
+                    /**
+                     * Show a part with the variation `.as-toggles` class on `.slot` component.
+                     * @type {state}
+                     * @name .is-displayed
+                     * @memberOf .slot--item
+                     * @example <div class="slot--item is-displayed">
+                     *     <!-- content -->
+                     * </div>
+                     */
+                    &.is-displayed
+                        display block

@@ -1,0 +1,18 @@
+{
+	"enableIndex": true,
+	"httpPort": 7770,
+	"enableLess": "less.json",
+	"enableStylus": "stylus.json",
+	"variationsRelativePath": "./variations/",
+	"templatesRelativePath": "./templates/",
+	"componentsRelativePath": "./components/",
+	"controllersRelativePath": "./controllers/",
+	"assetsRelativePath": "../webapp/src/",
+	"commonController": "common.js",
+	"commonVariation": "common.json",
+	"generatesRelativePath": "./dist/",
+	"staticOptions": {
+        "maxAge": 0
+    },
+	"routes": "routes.json"
+}

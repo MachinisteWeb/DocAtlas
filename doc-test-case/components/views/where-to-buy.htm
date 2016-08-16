@@ -1,0 +1,67 @@
+							<section class="ui where-to-buy<%- (component && component.variationClass) ? " " + component.variationClass : "" %>">
+								<div class="where-to-buy--inner">
+									<div class="where-to-buy--list">
+										<div class="where-to-buy--form">
+											<h1>Find your nearest store</h1>
+											<p>To find your nearest store, simply type your town name or poscode below and click search:</p>
+											<form action="./" method="post">
+												<fieldset class="form-group">
+													<label for="location">Town, Postcode...</label>
+													<input type="email" class="form-control" id="location" placeholder="Location...">
+													<small class="text-muted">Where no result for this location.</small>
+												</fieldset>
+											</form>
+											<div class="row">
+												<p class="col-sm-6"><a class="btn btn-default btn-block" href="">Search</a></p>
+											</div>
+										</div>
+										<div class="where-to-buy--result">
+											<ul class="where-to-buy--items">
+												<li class="where-to-buy--item">
+													<h3>Warehouse 23</h3>
+													<p>
+														P.O. Box 18957<br>
+														Austin,<br>
+														TX 78760
+													</p>
+													<p><button class="btn btn-link go-to-map">See on the map &gt;&gt;</button></p>
+												</li>
+												<li class="where-to-buy--item">
+													<h3>Warehouse 23</h3>
+													<p>
+														P.O. Box 18957<br>
+														Austin,<br>
+														TX 78760
+													</p>
+													<p><button class="btn btn-link go-to-map">See on the map &gt;&gt;</button></p>
+												</li>
+												<li class="where-to-buy--item">
+													<h3>Warehouse 23</h3>
+													<p>
+														P.O. Box 18957<br>
+														Austin,<br>
+														TX 78760
+													</p>
+													<p><button class="btn btn-link go-to-map">See on the map &gt;&gt;</button></p>
+												</li>
+												<li class="where-to-buy--item">
+													<h3>Warehouse 23</h3>
+													<p>
+														P.O. Box 18957<br>
+														Austin,<br>
+														TX 78760
+													</p>
+													<p><button class="btn btn-link go-to-map">See on the map &gt;&gt;</button></p>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="where-to-buy--map" id="map-canvas">
+										<p><img src="./content/images/google-map-mokup.jpg" alt="" class="img-responsive"></p>
+										<p>Can't find a store close you</p>
+										<div class="row">
+											<p class="col-sm-6"><a class="btn btn-default btn-block btn-green" href="http://www.warehouse23.com/">Buy Online</a></p>
+										</div>
+									</div>
+								</div>
+							</section>

@@ -1,0 +1,80 @@
+@import "variables"
+
+/**
+ * The hero image and carousels.
+ * @component .hero
+ * @example <div class="ui hero">
+ *     <!-- content -->
+ * </div>
+ */
+.hero
+    &--inner
+        container-max()
+        clear-left()
+        position relative
+
+        @media (min-width: screen-sm)
+            min-height 200px
+
+    .multiple
+        margin 0
+        padding 0
+        list-style-type none
+
+    .single
+        position relative
+
+    &--presentation
+        position absolute
+        top 50%
+        left 40px
+        width "calc(100% - %s)" % 80px
+        transform translateY(-50%)
+
+        h1, h2
+            hlmt-rounded()
+            font-size 3rem
+            color #fff
+            text-shadow -1px -1px 5px rgba(0, 0, 0, 0.5), -1px 1px 5px rgba(0, 0, 0, 0.5), 1px -1px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.5)
+
+            @media (min-width: screen-sm)
+                font-size 6rem
+
+
+    /**
+     * Allow banner to be displayed as a carousel.
+     * @type {variation}
+     * @name .as-carousel
+     * @memberOf .hero
+     * @example <div class="ui hero as-carousel">
+     *     <!-- content -->
+     * </div>
+     */
+    &.as-carousel
+        .multiple
+            display none
+
+        .owl-controls
+            position absolute
+            left 5px
+            bottom 5px
+            @media (min-width: screen-sm)
+                left 17px
+                bottom 17px
+
+        .owl-page
+            &.active
+                background-image url('./images/leaf-empty.png')
+            margin 3px
+            height 12px
+            width 12px
+
+            @media (min-width: screen-sm)
+                height 26px
+                width 26px
+
+            display inline-block
+            background-size 100%
+            background-image url('./images/icon-leaf.png')
+            background-repeat no-repeat
+            background-position center center

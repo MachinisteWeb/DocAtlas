@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: ui.header.styl</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: ui.header.styl</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>@import "variables"
+
+/**
+ * The Global Header.
+ * @component .header
+ * @example &lt;div class="ui header">
+ *     &lt;!-- content -->
+ * &lt;/div>
+ */
+.header
+    background-color rgba(221, 232, 253, 0.5)
+
+    h1
+        margin 0
+        padding-top 10px
+        padding-bottom 10px
+
+        @media (min-width: screen-sm)
+            padding-top 20px
+            padding-bottom 20px
+
+    &amp;--inner
+        container-max()
+        clear-left()
+        position relative
+        min-height 40px
+        z-index 3
+
+    &amp;--logo
+        text-align right
+
+        img
+            max-width 80px
+
+        @media (min-width: screen-sm)
+            text-align left
+
+            img
+                max-width: none
+
+    /**
+     * Reserved part for Buy Now Button.
+     * @component .header--buy
+     * @example &lt;div class="header--buy">
+     *     &lt;!-- content -->
+     * &lt;/div>
+     * @partof .header
+     */
+    &amp;--buy
+        margin 0
+        z-index 4
+        position absolute
+        top 50%
+        padding-left 0
+        left 70px
+        transform translateY(-50%)
+
+        @media (min-width: screen-sm)
+            left auto
+            right 20px
+
+        button, a
+            text-decoration none
+            padding 3px 9px
+            font-size 1.4rem
+
+            @media (min-width: screen-sm)
+                padding 6px 16px
+                font-size 2.6rem
+
+            hlmt-rounded()
+            color #FFF
+            background-color #2c1200
+            border 1px solid #2c1200
+            border-radius 4px
+            &amp;:hover
+                color #2c1200
+                background-color #fff
+
+        /**
+         * Change color of button.
+         * @type {state}
+         * @name .as-alternative
+         * @memberOf .header--buy
+         * @example &lt;div class="header--buy as-alternative">
+         *     &lt;!-- content -->
+         * &lt;/div>
+         */
+        &amp;.as-alternative
+            button, a
+                color #FFF
+                background-color #e4c471
+                border 1px solid #e4c471
+                &amp;:hover
+                    color #e4c471
+                    background-color #fff
+
+    /**
+     * The main menu navigation.
+     * @component .header--navigation
+     * @example &lt;div class="header--navigation">
+     *     &lt;!-- content -->
+     * &lt;/div>
+     * @partof .header
+     */
+    &amp;--navigation
+        position absolute
+        top 0
+        left 0
+        width calc(100%)
+        z-index 3
+
+        a
+            font-size 2.4rem
+            color #2c1200
+            padding 10px 20px
+            display block
+            border-top 1px solid #E8E8E8
+            hlmt-rounded()
+
+            @media (min-width: screen-sm)
+                box-sizing border-box
+                border-top 0
+                padding-top 0
+                padding-bottom 0
+                position relative
+                display inline-block
+                height 100%
+                font-size 3.3rem
+
+                span
+                    display inline-block
+                    position relative
+                    top 50px
+                    transform translateY(-50%)
+
+        @media (min-width: screen-sm)
+            top 50%
+            left 50%
+            height 100%
+            width calc(80% - 140px)
+            right auto
+            transform translate(-50%, -50%)
+
+        &amp;--title
+            cursor pointer
+            font-size 3rem
+            display inline-block
+            padding 12px 18px
+            color #2c1200
+            font-size 3rem
+            &amp;::before
+                font-awesome()
+                content "\f0c9"
+            span
+                display none
+
+            @media (min-width: screen-sm)
+                display none
+
+        &amp;--items
+            display none
+            padding 0
+            margin 0
+            list-style-type none
+            border-bottom 1px solid #E8E8E8
+            box-shadow 0px 0px 5px rgba(0, 0, 0, 0.5)
+
+            @media (min-width: screen-sm)
+                box-shadow none
+                box-sizing border-box
+                border-bottom 0
+                display block
+                position absolute
+                width 100%
+                height 100%
+                top 0
+                left 0
+
+        /**
+         * One of the item of menu navigation.
+         * @component .header--navigation--item
+         * @example &lt;li class="header--navigation--item">
+         *     &lt;!-- content -->
+         * &lt;/li>
+         * @partof .header
+         * @partof .header--navigation
+         */
+        &amp;--item
+            position relative
+
+            /**
+             * In this state, the submenu item is in active.
+             * @type {state}
+             * @name .is-active
+             * @memberOf .header--navigation--item
+             * @example &lt;!-- This is not active -->
+             * &lt;li class="header--navigation--item">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             * &lt;!-- This is active -->
+             * &lt;li class="header--navigation--item is-active">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             */
+            &amp;.is-active,
+            &amp;:hover
+                > a
+                    text-decoration none
+                    border-top 1px solid #462910
+                    color #fff
+                    background-color #2c1200
+                    @media (min-width: screen-sm)
+                        border-top 0
+
+                .share-caret-down
+                    color #fff
+                    cursor pointer
+
+            .share-caret-down
+                color #2c1200
+                position absolute
+                top 25px
+                right 0
+                z-index 2
+                transform translateY(-50%)
+                padding 18px
+
+                @media (min-width: screen-sm)
+                    display none
+
+            @media (min-width: screen-sm)
+                padding-left 5px
+                padding-right 5px
+                position relative
+                height 100%
+                display inline-block
+
+            /**
+             * In this state, the submenu item is displayed.
+             * @type {state}
+             * @name .is-displayed
+             * @memberOf .header--navigation--item
+             * @example &lt;!-- This is not displayed -->
+             * &lt;li class="header--navigation--item">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             * &lt;!-- This is displayed -->
+             * &lt;li class="header--navigation--item is-displayed">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             */
+            &amp;.is-displayed
+                &amp; ^[1]--subitems
+                    display block
+                    @media (min-width: screen-sm)
+                        display none
+
+            /**
+             * In this variation, the submenu is displayed as a button.
+             * @type {variation}
+             * @name .as-mobile-button
+             * @memberOf .header--navigation--item
+             * @example &lt;!-- This is not a button -->
+             * &lt;li class="header--navigation--item">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             * &lt;!-- This is displayed -->
+             * &lt;li class="header--navigation--item as-mobile-button">
+             *     &lt;!-- content -->
+             * &lt;/li>
+             */
+            &amp;.as-mobile-button
+                border-top 1px solid #E8E8E8
+
+                @media (min-width: screen-sm)
+                    display none
+
+                button, a
+                    hlmt-rounded()
+                    padding 3px 9px
+                    margin 5px 15px
+                    text-align center
+                    color #FFF
+                    background-color #2c1200
+                    border 1px solid #2c1200
+                    border-radius 4px
+                    &amp;:hover
+                        color #2c1200
+                        background-color #fff
+
+                /**
+                 * Only if `.as-mobile-button` is setted. The submenu is displayed as a button in an alternative color.
+                 * @type {variation}
+                 * @name .as-alternative
+                 * @memberOf .header--navigation--item
+                 * @example &lt;!-- This is not a button -->
+                 * &lt;li class="header--navigation--item as-mobile-button">
+                 *     &lt;!-- content -->
+                 * &lt;/li>
+                 * &lt;!-- This is displayed -->
+                 * &lt;li class="header--navigation--item as-mobile-button as-alternative">
+                 *     &lt;!-- content -->
+                 * &lt;/li>
+                 */
+                &amp;.as-alternative
+                    button, a
+                        color #FFF
+                        background-color #e4c471
+                        border 1px solid #e4c471
+                        &amp;:hover
+                            color #e4c471
+                            background-color: #fff
+
+        &amp;--subitems
+            display none
+            margin 0
+            padding 0
+            list-style-type none
+            background-color #FFF
+
+
+        &amp;--subitem
+            &amp;.is-active,
+            &amp;:hover
+                background-color #2c1200
+                a
+                    text-decoration none
+                    border-top 1px solid #462910
+                    color #fff
+
+        &amp;--subitem a
+            padding-left 40px
+
+        /**
+         * In this state, the menu is opened.
+         * @type {state}
+         * @name .is-opened
+         * @memberOf .header--navigation
+         * @example &lt;!-- This is not opened -->
+         * &lt;div class="header--navigation">
+         *     &lt;!-- content -->
+         * &lt;/div>
+         * &lt;!-- This is opened -->
+         * &lt;div class="header--navigation is-opened">
+         *     &lt;!-- content -->
+         * &lt;/div>
+         */
+        &amp;.is-opened
+            &amp; ^[1]--title
+                color #fff
+                background-color #2c1200
+
+                @media (min-width: screen-sm)
+                    color #2c1200
+                    background-color transparent
+
+            &amp; ^[1]--items
+                display block
+                background-color rgb(255, 255, 255)
+
+            @media (min-width: screen-sm)
+                &amp; ^[1]--items
+                    display inline-block
+                    background-color transparent
+                    margin 0</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Design Documentation</a></h2><h3>Externals</h3><ul><li><a href="external-Bootstrap.html">Bootstrap</a></li><li><a href="external-FontAwesome.html">FontAwesome</a></li></ul><h3>Patterns</h3><ul><li><a href="btn.html">.btn</a></li><li><a href="btn-block.html">.btn-block</a></li><li><a href="btn-default.html">.btn-default</a></li><li><a href="btn-green.html">.btn-green</a></li><li><a href="btn-lg.html">.btn-lg</a></li><li><a href="btn-link.html">.btn-link</a></li><li><a href="btn-primary.html">.btn-primary</a></li><li><a href="century-gothic.html">.century-gothic</a></li><li><a href="dropdown.html">.dropdown</a></li><li><a href="hlmt-rounded.html">.hlmt-rounded</a></li><li><a href="img-responsive.html">.img-responsive</a></li><li><a href="no-margin.html">.no-margin</a></li><li><a href="p-margin.html">.p-margin</a></li><li><a href="pull-left.html">.pull-left</a></li><li><a href="pull-right.html">.pull-right</a></li><li><a href="share-facebook.html">.share-facebook</a></li><li><a href="share-google-plus.html">.share-google-plus</a></li><li><a href="share-instagram.html">.share-instagram</a></li><li><a href="share-vk.html">.share-vk</a></li><li><a href="share-youtube.html">.share-youtube</a></li><li><a href="simple-tabs.html">.simple-tabs</a></li><li><a href="tabs.html">.tabs</a></li><li><a href="text-center.html">.text-center</a></li><li><a href="text-justify.html">.text-justify</a></li><li><a href="text-left.html">.text-left</a></li><li><a href="text-right.html">.text-right</a></li></ul><h3>Mixins</h3><ul><li><a href="box-sizing-border-box.html">.box-sizing-border-box</a></li><li><a href="clear-left.html">.clear-left</a></li><li><a href="transform-none.html">.transform-none</a></li></ul><h3>Components</h3><ul><li><a href="call-to-action.html">.call-to-action</a></li><li><a href="footer.html">.footer</a></li><li><a href="header.html">.header</a></li><li><a href="header--buy.html">.header--buy</a></li><li><a href="header--navigation.html">.header--navigation</a></li><li><a href="header--navigation--item.html">.header--navigation--item</a></li><li><a href="hero.html">.hero</a></li><li><a href="navigation.html">.navigation</a></li><li><a href="product.html">.product</a></li><li><a href="product--image.html">.product--image</a></li><li><a href="ribbon.html">.ribbon</a></li><li><a href="simple.html">.simple</a></li><li><a href="slot.html">.slot</a></li><li><a href="simple--content.html">.simple--content</a></li><li><a href="slot--item.html">.slot--item</a></li><li><a href="sn-share.html">.sn-share</a></li><li><a href="timeline.html">.timeline</a></li><li><a href="where-to-buy.html">.where-to-buy</a></li></ul><h3>Globals</h3><ul><li><a href="global.html#.create-icon">.create-icon</a></li><li><a href="global.html#.font-size">.font-size</a></li><li><a href="global.html#.rotate">.rotate</a></li><li><a href="global.html#.transform">.transform</a></li><li><a href="global.html#.translate-X">.translate-X</a></li><li><a href="global.html#.translate-xy">.translate-xy</a></li><li><a href="global.html#.translate-y">.translate-y</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue Aug 16 2016 15:48:09 GMT+0200 (Paris, Madrid (heure d’été))
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

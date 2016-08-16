@@ -1,0 +1,31 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/slot.htm",
+			"variation": {
+				"theme": "default",
+				"variationClass": "as-container",
+				"components": {
+					"item1": [{
+						"path": "views/simple.htm",
+						"variation": {
+							"variationClass": "as-separator",
+							"theme": "default",
+							"components": {
+								"content": [{
+									"path": "../variations/products/data-1.htm"
+								}]
+							}
+						}
+					}, {
+						"path": "views/call-to-action.htm",
+						"variation": {
+							"variationClass": "as-group",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: common.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: common.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*jslint browser: true, esversion: 6 */
+
+import Header from "scripts/component.header";
+import CallToAction from "scripts/component.call-to-action";
+import Simple from "scripts/component.simple";
+import Slot from "scripts/component.slot";
+import Product from "scripts/component.product";
+import Hero from "scripts/component.hero";
+
+/**
+ * @fileOverview Entry point to run all front Javascript of this website.
+ * @author Bruno Lesieur
+ * @version 1.0.0
+ * @module munchkin
+ */
+
+/**
+ * Write less, Do more.
+ * @external jQuery
+ * @global
+ * @see {@link https://jquery.com/|jQuery}
+ */
+
+/**
+ * throttle / debounce: Sometimes, less is more!.
+ * @external Cowboy
+ * @global
+ * @see {@link http://benalman.com/projects/jquery-throttle-debounce-plugin/|Cowboy}
+ */
+
+/**
+ * Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
+ * @external OwlCarousel
+ * @requires {@link external:jQuery}
+ * @global
+ * @see {@link http://www.owlgraphic.com/owlcarousel2/|OwlCarousel}
+ */
+
+/**
+ * Container for all static global function.
+ * @namespace ws
+ * @memberOf module:munchkin~
+ */
+var ws = window.ws || {};
+
+/**
+ * Namespace for all HTML Components.
+ * @namespace ui
+ * @memberOf module:munchkin~ws.
+ */
+ws.ui = ws.ui || {};
+
+(function () {
+
+    /**
+     * Add `target="_blank"` on external link without `target` explicitly setted.
+     * @function smartTargetInjection
+     * @memberOf module:munchkin~ws.
+     * @example &lt;!-- Apply for this Cases -->
+     * &lt;a href="http://www.externalsite.com/">&lt;/a>
+     * &lt;a href="./media/images/image.jpg">&lt;/a>
+     * &lt;a href="./media/upload/doucument.pdf">&lt;/a>
+     * &lt;!-- Not apply for this Cases -->
+     * &lt;a href="page-on-this-site.html">&lt;/a>
+     * &lt;a href="http://www.currentsite.com/">&lt;/a>
+     * &lt;a href="http://www.externalsite.com/" target="_self">&lt;/a>
+     * &lt;a href="page-on-this-site.html" target="_blank">&lt;/a>
+     */
+    ws.smartTargetInjection = function () {
+        var links = document.links;
+
+        links = [].filter.call(links, function (link) {
+            return !link.target;
+        });
+
+        links = [].filter.call(links, function (link) {
+            return link.hostname !== window.location.hostname ||
+                /\.(?!html?|php3?|aspx?)([a-z]{0,3}|[a-zt]{0,4})$/.test(link.pathname);
+        });
+
+        [].forEach.call(links, function (link) {
+            link.setAttribute("target", "_blank");
+        });
+    };
+
+    /**
+     * Allow you to run Bootstrap DropDownList without Bootstrap.js Library. No Dependencies.
+     * @function dropDownToggle
+     * @memberOf module:munchkin~ws.
+     * @see {@link http://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp|Bootstrap DropDown Example}
+     */
+    ws.dropDownToggle = function () {
+        var senders;
+
+        senders = document.querySelectorAll(".dropdown");
+
+        [].forEach.call(senders, function (sender) {
+            sender.addEventListener("click", function (e) {
+                e.preventDefault();
+                sender.classList.toggle("open");
+            });
+        });
+    };
+
+    /**
+     * Add an object to an array to a specific index.
+     * @function add
+     * @memberOf module:munchkin~ws.
+     * @param {Array}    arr   - Array of items
+     * @param {number} index - Index (0-baded) to add a new object.
+     */
+    ws.add = function (arr, index) {
+        arr.splice(index, 0, {});
+    };
+
+    /**
+     * Move Down an item in an array.
+     * @function add
+     * @memberOf module:munchkin~ws.
+     * @param {Array}    arr   - Array of items
+     * @param {number} index - Index (0-baded) to add a new object.
+     */
+    ws.moveDown = function (arr, index) {
+        if (index !== arr.length) {
+            arr.splice(index + 1, 0, arr.splice(index, 1)[0]);
+        }
+    };
+
+    /**
+     * Move Up an item in an array.
+     * @function add
+     * @memberOf module:munchkin~ws.
+     * @param {Array}    arr   - Array of items
+     * @param {number} index - Index (0-baded) to add a new object.
+     */
+    ws.moveUp = function (arr, index) {
+        if (index !== 0) {
+            arr.splice(index - 1, 0, arr.splice(index, 1)[0]);
+        }
+    };
+
+    /**
+     * Remove an item from an array from a specific index.
+     * @function add
+     * @memberOf module:munchkin~ws.
+     * @param {Array}    arr   - Array of items
+     * @param {number} index - Index (0-baded) to add a new object.
+     */
+    ws.remove = function (arr, index) {
+        arr.splice(index, 1);
+    };
+
+    /**
+     * Init behaviors on each pages.
+     * @function init
+     * @memberOf module:munchkin~ws.
+     */
+    ws.init = function () {
+        var header = new Header(),
+            slot = new Slot();
+
+        ws.smartTargetInjection();
+        ws.dropDownToggle();
+
+        header.openMenu();
+        header.showSubitem();
+        (new CallToAction()).sameHeightByPadding();
+        (new Simple()).toggleContent();
+        slot.toggleContent();
+        slot.hashBindWithTab();
+        (new Product()).carousel();
+        (new Hero()).carousel();
+    };
+}());
+
+/* Non Regression Test */
+if (window.testCase) {
+    ws.init();
+}
+
+export default ws;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Behaviors Documentation</a></h2><h3>Modules</h3><ul><li><a href="module-munchkin.html">munchkin</a></li></ul><h3>Externals</h3><ul><li><a href="external-Cowboy.html">Cowboy</a></li><li><a href="external-jQuery.html">jQuery</a></li><li><a href="external-OwlCarousel.html">OwlCarousel</a></li></ul><h3>Classes</h3><ul><li><a href="module-munchkin-ws.ui.CallToAction.html">CallToAction</a></li><li><a href="module-munchkin-ws.ui.Header.html">Header</a></li><li><a href="module-munchkin-ws.ui.Hero.html">Hero</a></li><li><a href="module-munchkin-ws.ui.Product.html">Product</a></li><li><a href="module-munchkin-ws.ui.Simple.html">Simple</a></li><li><a href="module-munchkin-ws.ui.Slot.html">Slot</a></li><li><a href="module-munchkin-ws.ui.WhereToBuy.html">WhereToBuy</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-munchkin-ws.html">ws</a></li><li><a href="module-munchkin-ws.ui.html">ui</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue Aug 16 2016 11:17:56 GMT+0200 (Paris, Madrid (heure d’été))
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "footer",
+				"design": "footer"
+			}
+		}, {
+			"path": "views/footer.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/footer.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

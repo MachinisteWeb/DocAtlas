@@ -1,0 +1,11 @@
+{
+  "name": "purina-cat-chow-test-case",
+  "version": "0.1.0",
+  "description": "Purina CatChow Webapp Non Regression Test Case",
+  "dependencies": {
+    "jquery": "2.2.x",
+    "systemjs": "0.19.x",
+    "traceur": "0.0.x"
+  }
+}
+

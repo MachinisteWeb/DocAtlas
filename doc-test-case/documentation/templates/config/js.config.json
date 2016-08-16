@@ -1,0 +1,15 @@
+{
+	"source": {
+		"include": [
+			"../webapp/src/scripts/common.js",
+			"../webapp/src/scripts/component.header.js",
+			"../webapp/src/scripts/component.product.js",
+			"../webapp/src/scripts/component.hero.js",
+			"../webapp/src/scripts/component.call-to-action.js",
+			"../webapp/src/scripts/component.simple.js",
+			"../webapp/src/scripts/component.slot.js",
+			"../webapp/src/scripts/component.where-to-buy.js"
+		]
+	},
+    "plugins": []
+}

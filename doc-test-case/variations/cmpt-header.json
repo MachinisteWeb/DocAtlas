@@ -1,0 +1,56 @@
+{
+	"components": {
+		"main" : [{
+			"path": "views/separator.htm",
+			"variation": {
+				"title": "header",
+				"design": "header",
+				"behaviors": "module-munchkin-ws.ui.Header"
+			}
+		}, {
+			"path": "views/header.htm",
+			"variation": {
+				"theme": "default"
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/header.htm",
+						"variation": {
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}, {
+			"path": "views/header.htm",
+			"variation": {
+				"demoSelected": "is-active",
+				"openMenu": "is-opened",
+				"openSubMenu": "is-displayed",
+				"theme": "default"
+			}
+		}, {
+			"path": "views/code.htm",
+			"variation": {
+				"components": {
+					"code": [{
+						"path": "views/header.htm",
+						"variation": {
+							"demoSelected": "is-active",
+							"openMenu": "is-opened",
+							"openSubMenu": "is-displayed",
+							"theme": "default"
+						}
+					}]
+				}
+			}
+		}, {
+			"path": "views/separator.htm"
+		}]
+	}
+}

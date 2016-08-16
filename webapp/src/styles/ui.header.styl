@@ -1,0 +1,366 @@
+@import "variables"
+
+/**
+ * The Global Header.
+ * @component .header
+ * @example <div class="ui header">
+ *     <!-- content -->
+ * </div>
+ */
+.header
+    background-color rgba(221, 232, 253, 0.5)
+
+    h1
+        margin 0
+        padding-top 10px
+        padding-bottom 10px
+
+        @media (min-width: screen-sm)
+            padding-top 20px
+            padding-bottom 20px
+
+    &--inner
+        container-max()
+        clear-left()
+        position relative
+        min-height 40px
+        z-index 3
+
+    &--logo
+        text-align right
+
+        img
+            max-width 80px
+
+        @media (min-width: screen-sm)
+            text-align left
+
+            img
+                max-width: none
+
+    /**
+     * Reserved part for Buy Now Button.
+     * @component .header--buy
+     * @example <div class="header--buy">
+     *     <!-- content -->
+     * </div>
+     * @partof .header
+     */
+    &--buy
+        margin 0
+        z-index 4
+        position absolute
+        top 50%
+        padding-left 0
+        left 70px
+        transform translateY(-50%)
+
+        @media (min-width: screen-sm)
+            left auto
+            right 20px
+
+        button, a
+            text-decoration none
+            padding 3px 9px
+            font-size 1.4rem
+
+            @media (min-width: screen-sm)
+                padding 6px 16px
+                font-size 2.6rem
+
+            hlmt-rounded()
+            color #FFF
+            background-color #2c1200
+            border 1px solid #2c1200
+            border-radius 4px
+            &:hover
+                color #2c1200
+                background-color #fff
+
+        /**
+         * Change color of button.
+         * @type {state}
+         * @name .as-alternative
+         * @memberOf .header--buy
+         * @example <div class="header--buy as-alternative">
+         *     <!-- content -->
+         * </div>
+         */
+        &.as-alternative
+            button, a
+                color #FFF
+                background-color #e4c471
+                border 1px solid #e4c471
+                &:hover
+                    color #e4c471
+                    background-color #fff
+
+    /**
+     * The main menu navigation.
+     * @component .header--navigation
+     * @example <div class="header--navigation">
+     *     <!-- content -->
+     * </div>
+     * @partof .header
+     */
+    &--navigation
+        position absolute
+        top 0
+        left 0
+        width calc(100%)
+        z-index 3
+
+        a
+            font-size 2.4rem
+            color #2c1200
+            padding 10px 20px
+            display block
+            border-top 1px solid #E8E8E8
+            hlmt-rounded()
+
+            @media (min-width: screen-sm)
+                box-sizing border-box
+                border-top 0
+                padding-top 0
+                padding-bottom 0
+                position relative
+                display inline-block
+                height 100%
+                font-size 3.3rem
+
+                span
+                    display inline-block
+                    position relative
+                    top 50px
+                    transform translateY(-50%)
+
+        @media (min-width: screen-sm)
+            top 50%
+            left 50%
+            height 100%
+            width calc(80% - 140px)
+            right auto
+            transform translate(-50%, -50%)
+
+        &--title
+            cursor pointer
+            font-size 3rem
+            display inline-block
+            padding 12px 18px
+            color #2c1200
+            font-size 3rem
+            &::before
+                font-awesome()
+                content "\f0c9"
+            span
+                display none
+
+            @media (min-width: screen-sm)
+                display none
+
+        &--items
+            display none
+            padding 0
+            margin 0
+            list-style-type none
+            border-bottom 1px solid #E8E8E8
+            box-shadow 0px 0px 5px rgba(0, 0, 0, 0.5)
+
+            @media (min-width: screen-sm)
+                box-shadow none
+                box-sizing border-box
+                border-bottom 0
+                display block
+                position absolute
+                width 100%
+                height 100%
+                top 0
+                left 0
+
+        /**
+         * One of the item of menu navigation.
+         * @component .header--navigation--item
+         * @example <li class="header--navigation--item">
+         *     <!-- content -->
+         * </li>
+         * @partof .header
+         * @partof .header--navigation
+         */
+        &--item
+            position relative
+
+            /**
+             * In this state, the submenu item is in active.
+             * @type {state}
+             * @name .is-active
+             * @memberOf .header--navigation--item
+             * @example <!-- This is not active -->
+             * <li class="header--navigation--item">
+             *     <!-- content -->
+             * </li>
+             * <!-- This is active -->
+             * <li class="header--navigation--item is-active">
+             *     <!-- content -->
+             * </li>
+             */
+            &.is-active,
+            &:hover
+                > a
+                    text-decoration none
+                    border-top 1px solid #462910
+                    color #fff
+                    background-color #2c1200
+                    @media (min-width: screen-sm)
+                        border-top 0
+
+                .share-caret-down
+                    color #fff
+                    cursor pointer
+
+            .share-caret-down
+                color #2c1200
+                position absolute
+                top 25px
+                right 0
+                z-index 2
+                transform translateY(-50%)
+                padding 18px
+
+                @media (min-width: screen-sm)
+                    display none
+
+            @media (min-width: screen-sm)
+                padding-left 5px
+                padding-right 5px
+                position relative
+                height 100%
+                display inline-block
+
+            /**
+             * In this state, the submenu item is displayed.
+             * @type {state}
+             * @name .is-displayed
+             * @memberOf .header--navigation--item
+             * @example <!-- This is not displayed -->
+             * <li class="header--navigation--item">
+             *     <!-- content -->
+             * </li>
+             * <!-- This is displayed -->
+             * <li class="header--navigation--item is-displayed">
+             *     <!-- content -->
+             * </li>
+             */
+            &.is-displayed
+                & ^[1]--subitems
+                    display block
+                    @media (min-width: screen-sm)
+                        display none
+
+            /**
+             * In this variation, the submenu is displayed as a button.
+             * @type {variation}
+             * @name .as-mobile-button
+             * @memberOf .header--navigation--item
+             * @example <!-- This is not a button -->
+             * <li class="header--navigation--item">
+             *     <!-- content -->
+             * </li>
+             * <!-- This is displayed -->
+             * <li class="header--navigation--item as-mobile-button">
+             *     <!-- content -->
+             * </li>
+             */
+            &.as-mobile-button
+                border-top 1px solid #E8E8E8
+
+                @media (min-width: screen-sm)
+                    display none
+
+                button, a
+                    hlmt-rounded()
+                    padding 3px 9px
+                    margin 5px 15px
+                    text-align center
+                    color #FFF
+                    background-color #2c1200
+                    border 1px solid #2c1200
+                    border-radius 4px
+                    &:hover
+                        color #2c1200
+                        background-color #fff
+
+                /**
+                 * Only if `.as-mobile-button` is setted. The submenu is displayed as a button in an alternative color.
+                 * @type {variation}
+                 * @name .as-alternative
+                 * @memberOf .header--navigation--item
+                 * @example <!-- This is not a button -->
+                 * <li class="header--navigation--item as-mobile-button">
+                 *     <!-- content -->
+                 * </li>
+                 * <!-- This is displayed -->
+                 * <li class="header--navigation--item as-mobile-button as-alternative">
+                 *     <!-- content -->
+                 * </li>
+                 */
+                &.as-alternative
+                    button, a
+                        color #FFF
+                        background-color #e4c471
+                        border 1px solid #e4c471
+                        &:hover
+                            color #e4c471
+                            background-color: #fff
+
+        &--subitems
+            display none
+            margin 0
+            padding 0
+            list-style-type none
+            background-color #FFF
+
+
+        &--subitem
+            &.is-active,
+            &:hover
+                background-color #2c1200
+                a
+                    text-decoration none
+                    border-top 1px solid #462910
+                    color #fff
+
+        &--subitem a
+            padding-left 40px
+
+        /**
+         * In this state, the menu is opened.
+         * @type {state}
+         * @name .is-opened
+         * @memberOf .header--navigation
+         * @example <!-- This is not opened -->
+         * <div class="header--navigation">
+         *     <!-- content -->
+         * </div>
+         * <!-- This is opened -->
+         * <div class="header--navigation is-opened">
+         *     <!-- content -->
+         * </div>
+         */
+        &.is-opened
+            & ^[1]--title
+                color #fff
+                background-color #2c1200
+
+                @media (min-width: screen-sm)
+                    color #2c1200
+                    background-color transparent
+
+            & ^[1]--items
+                display block
+                background-color rgb(255, 255, 255)
+
+            @media (min-width: screen-sm)
+                & ^[1]--items
+                    display inline-block
+                    background-color transparent
+                    margin 0

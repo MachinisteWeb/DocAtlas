@@ -1,0 +1,63 @@
+@import "variables"
+
+/**
+ * The Global Ribbon.
+ * @component .ribbon
+ * @example <div class="ui ribbon">
+ *     <!-- content -->
+ * </div>
+ */
+.ribbon
+    background-color #ffd09a
+    position relative
+    z-index: 2
+
+    &--inner
+        position relative
+        container-max()
+        clear-left()
+
+    &--logo
+        float left
+        column(1, 1, gutter)
+        margin-left gutter
+        margin-right gutter
+
+        padding-top .8rem
+        padding-bottom .8rem
+        text-align left
+
+        position relative
+
+        @media (min-width: screen-xs)
+            column(1, 2, gutter)
+            push(1, 2)
+            text-align right
+
+    &--abstract
+        float left
+        column(1, 1, gutter)
+
+        position relative
+        display none
+
+        @media (min-width: screen-xs)
+            column(1, 2, gutter)
+            pull(1, 2)
+            margin-left gutter
+            margin-right gutter
+            display block
+            position absolute
+            height 100%
+
+        a
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            display inline-block
+            font-weight bold
+            color #2c1200
+            font-size 1.2rem
+            text-decoration none
+            &:hover
+                text-decoration underline

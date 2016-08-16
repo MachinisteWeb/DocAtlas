@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: ui.sn-share.styl</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: ui.sn-share.styl</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>@import "variables"
+
+/**
+ * The Munchkin social Networks share.
+ * @component .sn-share
+ * @example &lt;div class="ui sn-share">
+ *     &lt;!-- content -->
+ * &lt;/div>
+ */
+.sn-share
+    background-color rgba(221, 232, 253, 0.5)
+
+    &amp;--inner
+        container-max()
+        clear-left()
+        padding-left gutter
+        padding-right gutter
+        position relative
+        min-height 40px
+        z-index 2
+
+    &amp;--navigation
+        float left
+        column(3, 4, gutter)
+        box-sizing border-box
+        padding 0
+
+    &amp;--logo
+        box-sizing border-box
+        float left
+        column(1, 4, gutter)
+        padding 0
+        margin-top 12px
+        text-align right
+
+        img
+            width auto
+            max-width 75px
+
+        @media (min-width: screen-sm)
+            img
+                max-width 90px
+
+    &amp;--items
+        margin 0
+        padding 20px 0
+        list-style-type none
+
+    &amp;--item
+        display inline-block
+        &amp; + .sn-share--item
+            margin-left 40px
+
+    a
+        color #2c1200
+        font-size 2rem
+
+        @media (min-width: screen-sm)
+            font-size 2.4rem
+
+    /**
+     * The white transparency design for the share component without title only for desktop.
+     * @type {variation}
+     * @name .as-alternative
+     * @memberOf .sn-share
+     * @example &lt;div class="ui sn-share as-alternative">
+     *     &lt;!-- content -->
+     * &lt;/div>
+     */
+    &amp;.as-alternative
+        display none
+        background-color rgba(255, 255, 255, 0.8)
+
+        .sn-share--logo
+            display none
+
+        .sn-share--navigation
+            float left
+            column(1, 1, gutter);
+            text-align right
+            padding 0
+
+        .sn-share--items
+            padding 15px
+
+        @media (min-width: screen-sm)
+            display block
+
+    /**
+     * Apply a 10px 50px padding on the component.
+     * @type {variation}
+     * @name .with-alternative-padding
+     * @memberOf .sn-share
+     * @example &lt;div class="ui sn-share as-alternative with-alternative-padding">
+     *     &lt;!-- content -->
+     * &lt;/div>
+     */
+    &amp;.with-alternative-padding
+        .sn-share--items
+            padding 10px 50px
+
+    /**
+     * The white transparency design for the share component without title only for mobile.
+     * @type {variation}
+     * @name .as-complementary
+     * @memberOf .sn-share
+     * @example &lt;div class="ui sn-share as-complementary">
+     *     &lt;!-- content -->
+     * &lt;/div>
+     */
+    &amp;.as-complementary
+        background-color rgba(255, 255, 255, 0.8)
+
+        .sn-share--logo
+            display none
+
+        .sn-share--navigation
+            box-sizing border-box
+            text-align center
+            padding 0
+            float left
+            column(1, 1, gutter)
+
+        @media (min-width: screen-sm)
+            display none</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Design Documentation</a></h2><h3>Externals</h3><ul><li><a href="external-Bootstrap.html">Bootstrap</a></li><li><a href="external-FontAwesome.html">FontAwesome</a></li></ul><h3>Patterns</h3><ul><li><a href="btn.html">.btn</a></li><li><a href="btn-block.html">.btn-block</a></li><li><a href="btn-default.html">.btn-default</a></li><li><a href="btn-green.html">.btn-green</a></li><li><a href="btn-lg.html">.btn-lg</a></li><li><a href="btn-link.html">.btn-link</a></li><li><a href="btn-primary.html">.btn-primary</a></li><li><a href="century-gothic.html">.century-gothic</a></li><li><a href="dropdown.html">.dropdown</a></li><li><a href="hlmt-rounded.html">.hlmt-rounded</a></li><li><a href="img-responsive.html">.img-responsive</a></li><li><a href="no-margin.html">.no-margin</a></li><li><a href="p-margin.html">.p-margin</a></li><li><a href="pull-left.html">.pull-left</a></li><li><a href="pull-right.html">.pull-right</a></li><li><a href="share-facebook.html">.share-facebook</a></li><li><a href="share-google-plus.html">.share-google-plus</a></li><li><a href="share-instagram.html">.share-instagram</a></li><li><a href="share-vk.html">.share-vk</a></li><li><a href="share-youtube.html">.share-youtube</a></li><li><a href="simple-tabs.html">.simple-tabs</a></li><li><a href="tabs.html">.tabs</a></li><li><a href="text-center.html">.text-center</a></li><li><a href="text-justify.html">.text-justify</a></li><li><a href="text-left.html">.text-left</a></li><li><a href="text-right.html">.text-right</a></li></ul><h3>Mixins</h3><ul><li><a href="box-sizing-border-box.html">.box-sizing-border-box</a></li><li><a href="clear-left.html">.clear-left</a></li><li><a href="transform-none.html">.transform-none</a></li></ul><h3>Components</h3><ul><li><a href="call-to-action.html">.call-to-action</a></li><li><a href="footer.html">.footer</a></li><li><a href="header.html">.header</a></li><li><a href="header--buy.html">.header--buy</a></li><li><a href="header--navigation.html">.header--navigation</a></li><li><a href="header--navigation--item.html">.header--navigation--item</a></li><li><a href="hero.html">.hero</a></li><li><a href="navigation.html">.navigation</a></li><li><a href="product.html">.product</a></li><li><a href="product--image.html">.product--image</a></li><li><a href="ribbon.html">.ribbon</a></li><li><a href="simple.html">.simple</a></li><li><a href="slot.html">.slot</a></li><li><a href="simple--content.html">.simple--content</a></li><li><a href="slot--item.html">.slot--item</a></li><li><a href="sn-share.html">.sn-share</a></li><li><a href="timeline.html">.timeline</a></li><li><a href="where-to-buy.html">.where-to-buy</a></li></ul><h3>Globals</h3><ul><li><a href="global.html#.create-icon">.create-icon</a></li><li><a href="global.html#.font-size">.font-size</a></li><li><a href="global.html#.rotate">.rotate</a></li><li><a href="global.html#.transform">.transform</a></li><li><a href="global.html#.translate-X">.translate-X</a></li><li><a href="global.html#.translate-xy">.translate-xy</a></li><li><a href="global.html#.translate-y">.translate-y</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue Aug 16 2016 15:48:09 GMT+0200 (Paris, Madrid (heure d’été))
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
