@@ -52,6 +52,7 @@ Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichie
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--buy.html »
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--navigation.html »
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--navigation--item.html »
+
 Et côté JS avec « http://www.lesieur.name/test-case-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
 
 
@@ -89,8 +90,7 @@ Le site sera accessible ici :
 
 ## Générer la Documentation et des Test Case HTML ##
 
-- Il faut lancer les fichiers « .bat » suivant :
-
+Il faut lancer les fichiers « .bat » suivant :
 - `watch-assets.bat` : faire tourner sur « localhost » afin de tester en directe les modifications CSS et JS faites dans les fichiers du site source.
 - `generate-assets.bat` : générer la totalité des « test case » HTML pour pouvoir les testers sans utiliser NodeAtlas.
 - `generate-css.bat` : générer la totalité de la documentation Design.
@@ -161,6 +161,7 @@ If somebody update CSS and JS file in `webapp` directory, Test Case files will b
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--buy.html »
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--navigation.html »
   - « http://www.lesieur.name/test-case-atlas/documentation/design/header--navigation--item.html »
+
 And for JS the same with « http://www.lesieur.name/test-case-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
 
 
@@ -196,8 +197,7 @@ The website will be to:
 
 ### Generate Documentation and HTML Test Case ###
 
-- Run the following « .bat »:
-
+Run the following « .bat »:
 - `watch-assets.bat` : run on « localhost » for test in real time all CSS and JS update from source files.
 - `generate-assets.bat` : generate all HTML « test case » for use later without NodeAtlas.
 - `generate-css.bat` : generate all Design Documentation.
