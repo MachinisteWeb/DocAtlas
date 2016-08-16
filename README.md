@@ -28,7 +28,7 @@ Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichie
 
 ## Exemple ##
 
-1. Rendez-vous sur « http://www.lesieur.name/test-case-atlas/products/munchkin-2.html », ceci représente un agencement de composant pour afficher une page de détaille représentant un « layout ».
+1. Rendez-vous sur « http://www.lesieur.name/test-case-atlas/ » puis par exemple sur « http://www.lesieur.name/test-case-atlas/products/munchkin-2.html ». Ceci représente un agencement de composant pour afficher une page de détaille représentant un « layout ».
 
 2. Avec F12, repérez la liste des composants utilisez grace à la classe `.ui`. Ce sont
   - ribbon
@@ -137,7 +137,7 @@ If somebody update CSS and JS file in `webapp` directory, Test Case files will b
 
 ### Example ###
 
-1. Go on « http://www.lesieur.name/test-case-atlas/products/munchkin-2.html », that represent a list of component which together represent a « layout ».
+1. Go on « http://www.lesieur.name/test-case-atlas/ » and then for example on « http://www.lesieur.name/test-case-atlas/products/munchkin-2.html ». That represent a list of component which together represent a « layout ».
 
 2. With F12, find all components with the `.ui` class. Comonents are :
   - ribbon
