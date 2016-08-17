@@ -1,4 +1,4 @@
-# Purina Cat Chow - Documentation #
+# Munchkin - Documentation #
 
 ## Overview ##
 
