@@ -73,7 +73,7 @@ Déplacez vous ensuite dans le dossier :
 et utilisez la commande :
 
 ```
-\> node </path/to/>node-atlas/node-atlas.js --browse
+\> node </path/to/>node-atlas/ --browse
 ```
 
 ou lancez `doc-test-case/watch-assets.bat` en double cliquant dessus :
@@ -182,7 +182,7 @@ Then you move into the folder:
 and use the command:
 
 ```
-\> node </path/to/>node-atlas/node-atlas.js --browse
+\> node </path/to/>node-atlas/ --browse
 ```
 
 or run `doc-test-case/watch-assets.bat` by double clicking and:
