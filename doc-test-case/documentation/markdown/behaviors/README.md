@@ -12,4 +12,4 @@ To auto-generate this documentation from your `.js` file comments from `assets/j
 
 ## Conventions ##
 
-The HTML/CSS/JS conventions are from [HTML, CSS and JS Conventions](http://blog.lesieur.name/conventions-html-et-css-orientes-composants/).
+The HTML/CSS/JS conventions are from [HTML, CSS and JS Conventions](https://blog.lesieur.name/conventions-html-et-css-orientes-composants/).
