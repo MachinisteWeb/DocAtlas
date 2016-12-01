@@ -2,7 +2,7 @@
 
 Version : 0.1
 
-NodeAtlas Version minimale : 1.0.x
+NodeAtlas Version minimale : 1.8.x
 
 **For an international version of this README.md, [see below](#international-version).**
 
