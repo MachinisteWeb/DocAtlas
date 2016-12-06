@@ -1,0 +1,11 @@
+		<section class="ui navigation<?- (component && component.variationClass) ? ' ' + component.variationClass : '' ?>">
+			<div class="navigation--inner">
+				<nav class="navigation--navigation">
+					<ul class="navigation--items">
+						<? if (component && component.components && component.components.content) { ?>
+							<?- includeComponents('content', component, path) ?>
+						<? } ?>
+					</ul>
+				</nav>
+			</div>
+		</section>

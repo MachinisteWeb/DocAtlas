@@ -1,19 +1,19 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "where-to-buy",
 				"design": "where-to-buy"
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/where-to-buy.htm",
+						"path": "partials/where-to-buy.htm",
 						"variation": {
 							"theme": "default"
 						}
@@ -21,11 +21,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/where-to-buy.htm",
+						"path": "partials/where-to-buy.htm",
 						"variation": {
 							"theme": "default"
 						}
@@ -33,7 +33,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }

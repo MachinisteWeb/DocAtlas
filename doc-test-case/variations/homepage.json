@@ -1,13 +1,13 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/hero.htm",
+						"path": "partials/hero.htm",
 						"variation": {
 							"variationClass": "as-carousel",
 							"theme": "default",
@@ -18,7 +18,7 @@
 							}
 						}
 					}, {
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -28,7 +28,7 @@
 							}
 						}
 					}, {
-						"path": "views/call-to-action.htm",
+						"path": "partials/call-to-action.htm",
 						"variation": {
 							"small": true,
 							"variationClass": "as-group",

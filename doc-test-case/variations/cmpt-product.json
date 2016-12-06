@@ -1,20 +1,20 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "product",
 				"design": "product",
 				"behaviors": "module-munchkin-ws.ui.Product"
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
@@ -24,11 +24,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
@@ -38,15 +38,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"variationClass": "as-small",
 							"paragraphs": 0,
@@ -56,11 +56,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"variationClass": "as-small",
 							"paragraphs": 0,
@@ -70,15 +70,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
@@ -89,11 +89,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
@@ -104,15 +104,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"theme": "default"
@@ -121,11 +121,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"theme": "default"
@@ -134,7 +134,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }

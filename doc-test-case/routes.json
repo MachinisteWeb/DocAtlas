@@ -1,106 +1,106 @@
 {
 	"/homepage.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "homepage.json"
 	},
 	"/products.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "products.json"
 	},
 	"/products-extensions.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "products.json"
 	},
 	"/products/munchkin.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	},
 	"/products/munchkin-2.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	},
 	"/products/munchkin-3.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	},
 	"/products/munchkin-4.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	,
 	"/products/munchkin-zombies.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	}},
 	"/products/munchkin-zombies-2.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	},
 	"/products/munchkin-zombies-3.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "product.json"
 	},
 	"/editions.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "timeline.json"
 	},
 	"/about.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "content.json"
 	},
 	"/buy-now.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "default.json"
 	},
 	"/where-to-buy.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "where-to-buy.json"
 	},
 	"/error.html": {
-		"template": "default.htm",
+		"view": "default.htm",
 		"variation": "default.json"
 	},
 	"/components/ribbon.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-ribbon.json"
 	},
 	"/components/header.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-header.json"
 	},
 	"/components/footer.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-footer.json"
 	},
 	"/components/navigation.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-navigation.json"
 	},
 	"/components/sn-share.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-sn-share.json"
 	},
 	"/components/hero.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-hero.json"
 	},
 	"/components/call-to-action.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-call-to-action.json"
 	},
 	"/components/timeline.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-timeline.json"
 	},
 	"/components/where-to-buy.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-where-to-buy.json"
 	},
 	"/components/product.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-product.json"
 	},
 	"/components/simple.html": {
-		"template": "component.htm",
+		"view": "component.htm",
 		"variation": "cmpt-simple.json"
 	}
 }

@@ -1,23 +1,23 @@
 {
 	"components": {
 		"head" : [{
-			"path": "views/ribbon.htm",
+			"path": "partials/ribbon.htm",
 			"variation": {
 				"theme": "default"
 			}
 		}, {
-			"path": "views/header.htm",
+			"path": "partials/header.htm",
 			"variation": {
 				"theme": "default"
 			}
 		}],
 		"footer" : [{
-			"path": "views/sn-share.htm",
+			"path": "partials/sn-share.htm",
 			"variation": {
 				"theme": "default"
 			}
 		}, {
-			"path": "views/footer.htm",
+			"path": "partials/footer.htm",
 			"variation": {
 				"theme": "default"
 			}

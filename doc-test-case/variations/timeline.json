@@ -1,7 +1,7 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/navigation.htm",
+			"path": "partials/navigation.htm",
 			"variation": {
 				"theme": "default",
 				"components": {
@@ -11,13 +11,13 @@
 				}
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/timeline.htm",
+						"path": "partials/timeline.htm",
 						"variation": {
 							"theme": "default"
 						}

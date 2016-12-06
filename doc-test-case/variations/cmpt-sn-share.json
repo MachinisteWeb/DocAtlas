@@ -1,23 +1,23 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "sn-share",
 				"design": "sn-share"
 			}
 		}, {
-			"path": "views/sn-share.htm",
+			"path": "partials/sn-share.htm",
 			"variation": {
 				"variationClass": "as-alternative",
 				"theme": "default"
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-alternative",
 							"theme": "default"
@@ -26,15 +26,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-complementary",
 							"theme": "default"
@@ -43,11 +43,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-complementary",
 							"theme": "default"
@@ -56,15 +56,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-alternative",
 							"theme": "default"
@@ -73,11 +73,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-alternative",
 							"theme": "default"
@@ -86,18 +86,18 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/sn-share.htm",
+			"path": "partials/sn-share.htm",
 			"variation": {
 				"theme": "default"
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"theme": "default"
 						}

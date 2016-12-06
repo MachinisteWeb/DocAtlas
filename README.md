@@ -2,7 +2,7 @@
 
 Version : 0.1
 
-NodeAtlas Version minimale : 1.8.x
+NodeAtlas Version minimale : 2.0.x
 
 **For an international version of this README.md, [see below](#international-version).**
 
@@ -20,7 +20,7 @@ TestCaseAtlas est un exemple de Documentation d'Interface Utilisateur et de Cas 
 
 Le principe est simple, dans un dossier (ici `webapp`) sont stocké les fichiers de votre site web (quelque soit sa techno Back-end) et notamment les fichiers CSS et JS (ici dans le dossier `webapp/src`). Un dossier parallèle embarque NodeAtlas (`doc-test-case`) afin de recréer une liste complète des layouts et composants existant sur votre site `webapp` à partir de vos fichier CSS et JS source (`webapp/src`). Il va également embarquer une documentation JSDoc qui va non seulement documenter les actions JavaScript de l'interface utilisateur mais également tous ses états et variations représentées par des noms de classes CSS.
 
-Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichiers de Cas de Test seront immédiatement impacté ce qui vous permettra de visuellement et rapidement voir si l'intégralité des versions et états d'un composant ou d'un layout tient a toujours un design correcte et qu'il n'y a eu aucune regression. La documentation mise à jour en parallèle assurera que les Back-end mettant à jour le site web original le fasse en respectant des nomonclatures précises.
+Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichiers de Cas de Test seront immédiatement impactés ce qui vous permettra de visuellement et rapidement voir si l'intégralité des versions et états d'un composant ou d'un layout à toujours un design correcte et qu'il n'y a eu aucune regression. La documentation mise à jour en parallèle assurera que les Back-end mettant à jour le site web original le fasse en respectant des nomonclatures précises.
 
 
 
@@ -45,7 +45,7 @@ Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichie
     - sn-share
   - footer
 
-3. Nous voulons plus d'information sur le `sn-share`. Nous remontons à l'adresse « https://www.lesieur.name/test-case-atlas/ » et choisissons le composant « https://www.lesieur.name/test-case-atlas/components/sn-share.html ». Nous voyons ainsi toutes les possibilités d'affichage et pour chaqu'une un code exemple avec « Show / Hide Code ». Toutes ses variations et états sont résumé dans la Doc Design « https://www.lesieur.name/test-case-atlas/documentation/design/sn-share.html ».
+3. Nous voulons plus d'information sur le `sn-share`. Nous remontons à l'adresse « https://www.lesieur.name/test-case-atlas/ » et choisissons le composant « https://www.lesieur.name/test-case-atlas/components/sn-share.html ». Nous voyons ainsi toutes les possibilités d'affichage et pour chacune un code exemple avec « Show / Hide Code ». Toutes ses variations et états sont résumé dans la Doc Design « https://www.lesieur.name/test-case-atlas/documentation/design/sn-share.html ».
 
 4. Il existe également une documentation JS pour chaque interface comme avec le `header` « https://www.lesieur.name/test-case-atlas/documentation/design/header.html ». On peut voir ainsi côté CSS toutes les classes de variations et d'états
   - « https://www.lesieur.name/test-case-atlas/documentation/design/header.html »
@@ -71,6 +71,12 @@ Déplacez vous ensuite dans le dossier :
 ```
 
 et utilisez la commande :
+
+```
+\> npm install
+```
+
+puis utilisez la commande :
 
 ```
 \> node </path/to/>node-atlas/ --browse
@@ -180,6 +186,12 @@ Then you move into the folder:
 ```
 
 and use the command:
+
+```
+\> npm install
+```
+
+then use the command:
 
 ```
 \> node </path/to/>node-atlas/ --browse

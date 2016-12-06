@@ -1,20 +1,20 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "hero",
 				"design": "hero",
 				"behaviors": "module-munchkin-ws.ui.Hero"
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/hero.htm",
+						"path": "partials/hero.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -27,17 +27,17 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"theme": "default",
 							"variationClass": "as-container",
 							"components": {
 								"item1": [{
-									"path": "views/hero.htm",
+									"path": "partials/hero.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -53,15 +53,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/hero.htm",
+						"path": "partials/hero.htm",
 						"variation": {
 							"variationClass": "as-carousel",
 							"theme": "default",
@@ -75,17 +75,17 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"theme": "default",
 							"variationClass": "as-container",
 							"components": {
 								"item1": [{
-									"path": "views/hero.htm",
+									"path": "partials/hero.htm",
 									"variation": {
 										"variationClass": "as-carousel",
 										"theme": "default",
@@ -102,7 +102,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }

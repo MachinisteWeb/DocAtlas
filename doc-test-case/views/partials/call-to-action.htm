@@ -1,4 +1,4 @@
-							<section class="ui call-to-action<%- (component && component.variationClass) ? " " + component.variationClass : "" %>">
+							<section class="ui call-to-action<?- (component && component.variationClass) ? " " + component.variationClass : "" ?>">
 								<div class="call-to-action--inner">
 									<ul class="multiple">
 										<li class="single">
@@ -28,7 +28,7 @@
 												<p><a class="btn btn-link" href="">Find out more &gt;&gt;</a></p>
 											</div>
 										</li>
-										<% if (component && !component.small) { %>
+										<? if (component && !component.small) { ?>
 										<li class="single">
 											<div class="call-to-action--content">
 												<p class="text-center"><a class="btn btn-link" href=""><img class="img-responsive" src="./content/images/kitten-leaf.png" alt=""></a></p>
@@ -65,7 +65,7 @@
 												<p><a class="btn btn-link" href="">Find out more &gt;&gt;</a></p>
 											</div>
 										</li>
-										<% } %>
+										<? } ?>
 									</ul>
 								</div>
 							</section>

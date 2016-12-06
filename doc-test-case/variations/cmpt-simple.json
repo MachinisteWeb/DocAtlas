@@ -1,20 +1,20 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "simple",
 				"design": "simple",
 				"behaviors": "module-munchkin-ws.ui.Simple"
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -27,11 +27,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -44,15 +44,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -65,11 +65,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -82,15 +82,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"variationClass": "as-toggles",
 							"theme": "default",
@@ -102,7 +102,7 @@
 									"path": "../variations/product/tabs-1.htm"
 								}],
 								"item1": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"variationClass": "is-displayed",
 										"theme": "default",
@@ -114,7 +114,7 @@
 									}
 								}],
 								"item2": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -125,7 +125,7 @@
 									}
 								}],
 								"item3": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -141,11 +141,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"variationClass": "as-toggles",
 							"theme": "default",
@@ -157,7 +157,7 @@
 									"path": "../variations/product/tabs-1.htm"
 								}],
 								"item1": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"variationClass": "is-displayed",
 										"theme": "default",
@@ -169,7 +169,7 @@
 									}
 								}],
 								"item2": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -180,7 +180,7 @@
 									}
 								}],
 								"item3": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -196,15 +196,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -212,7 +212,7 @@
 									"path": "../variations/product/tabs-2.htm"
 								}],
 								"item1": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"variationClass": "as-toggles",
 										"theme": "default",
@@ -229,11 +229,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -241,7 +241,7 @@
 									"path": "../variations/product/tabs-2.htm"
 								}],
 								"item1": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"variationClass": "as-toggles",
 										"theme": "default",
@@ -258,15 +258,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -279,11 +279,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -296,15 +296,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"variationClass": "as-separator",
 							"theme": "default",
@@ -318,11 +318,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"variationClass": "as-separator",
 							"theme": "default",
@@ -336,15 +336,15 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -357,11 +357,11 @@
 				}
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/simple.htm",
+						"path": "partials/simple.htm",
 						"variation": {
 							"theme": "default",
 							"components": {
@@ -374,7 +374,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }

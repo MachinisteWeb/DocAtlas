@@ -1,19 +1,19 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "ribbon",
 				"design": "ribbon"
 			}
 		}, {
-			"path": "views/ribbon.htm"
+			"path": "partials/ribbon.htm"
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/ribbon.htm",
+						"path": "partials/ribbon.htm",
 						"variation": {
 							"theme": "default"
 						}
@@ -21,7 +21,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }

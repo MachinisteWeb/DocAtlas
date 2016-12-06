@@ -1,7 +1,7 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/navigation.htm",
+			"path": "partials/navigation.htm",
 			"variation": {
 				"theme": "default",
 				"components": {
@@ -11,32 +11,32 @@
 				}
 			}
 		}, {
-			"path": "views/slot.htm",
+			"path": "partials/slot.htm",
 			"variation": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-alternative with-alternative-padding",
 							"theme": "default"
 						}
 					}, {
-						"path": "views/product.htm",
+						"path": "partials/product.htm",
 						"variation": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
 							"theme": "default"
 						}
 					}, {
-						"path": "views/sn-share.htm",
+						"path": "partials/sn-share.htm",
 						"variation": {
 							"variationClass": "as-complementary",
 							"theme": "default"
 						}
 					}, {
-						"path": "views/slot.htm",
+						"path": "partials/slot.htm",
 						"variation": {
 							"variationClass": "as-toggles",
 							"theme": "default",
@@ -48,7 +48,7 @@
 									"path": "../variations/product/tabs-1.htm"
 								}],
 								"item1": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"variationClass": "is-displayed",
 										"theme": "default",
@@ -60,7 +60,7 @@
 									}
 								}],
 								"item2": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {
@@ -71,7 +71,7 @@
 									}
 								}],
 								"item3": [{
-									"path": "views/simple.htm",
+									"path": "partials/simple.htm",
 									"variation": {
 										"theme": "default",
 										"components": {

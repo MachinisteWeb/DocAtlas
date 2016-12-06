@@ -6,13 +6,13 @@
 				<div class="header--logo">
 					<h1><a href=""><img src="./content/images/header-logo.png" alt="Logo"></a></h1>
 				</div>
-				<nav class="header--navigation<%- (component && component.openMenu) ? ' ' + component.openMenu : '' %>">
+				<nav class="header--navigation<?- (component && component.openMenu) ? ' ' + component.openMenu : '' ?>">
 					<span class="header--navigation--title"><span>Menu</span></span>
 					<ul class="header--navigation--items">
 						<li class="header--navigation--item">
 							<a href=""><span>Home</span></a>
 						</li>
-						<li class="header--navigation--item<%- (component && component.openSubMenu) ? ' ' + component.openSubMenu : '' %><%- (component && component.demoSelected) ? " " + component.demoSelected : "" %>">
+						<li class="header--navigation--item<?- (component && component.openSubMenu) ? ' ' + component.openSubMenu : '' ?><?- (component && component.demoSelected) ? " " + component.demoSelected : "" ?>">
 							<a href=""><span>Products</span></a>
 							<span class="share-caret-down"><span>Open</span></span>
 							<ul class="header--navigation--subitems">

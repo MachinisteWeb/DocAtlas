@@ -4,13 +4,12 @@
 	"enableLess": "less.json",
 	"enableStylus": "stylus.json",
 	"variationsRelativePath": "./variations/",
-	"templatesRelativePath": "./templates/",
-	"componentsRelativePath": "./components/",
+	"viewsRelativePath": "./views/",
 	"controllersRelativePath": "./controllers/",
 	"assetsRelativePath": "../webapp/src/",
 	"commonController": "common.js",
 	"commonVariation": "common.json",
-	"generatesRelativePath": "./dist/",
+	"serverlessRelativePath": "./dist/",
 	"staticOptions": {
         "maxAge": 0
     },

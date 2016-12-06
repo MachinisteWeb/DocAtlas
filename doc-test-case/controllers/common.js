@@ -5,7 +5,7 @@ website.components = {};
 
 (function (publics) {
 
-    website.components.componentAtlas = require('../components/controllers/component-atlas');
+    website.components.componentAtlas = require('./modules/component-atlas');
 
 	publics.setConfigurations = function (callback) {
         var NA = this,
@@ -13,7 +13,7 @@ website.components = {};
         	express = NA.modules.express,
         	staticOptions = { maxAge: 86400000 * 30 };
 
-        NA.httpServer.use(NA.webconfig.urlRelativeSubPath + '/assets/', express.static(path.join(NA.websitePhysicalPath, 'node_modules'), staticOptions));
+        NA.httpServer.use(NA.webconfig.urlRelativeSubPath + '/assets/', express.static(path.join(NA.serverPath, NA.serverModulesRelativePath), staticOptions));
 
         callback();
     };

@@ -1,22 +1,22 @@
 {
 	"components": {
 		"main" : [{
-			"path": "views/separator.htm",
+			"path": "partials/separator.htm",
 			"variation": {
 				"title": "footer",
 				"design": "footer"
 			}
 		}, {
-			"path": "views/footer.htm",
+			"path": "partials/footer.htm",
 			"variation": {
 				"theme": "default"
 			}
 		}, {
-			"path": "views/code.htm",
+			"path": "partials/code.htm",
 			"variation": {
 				"components": {
 					"code": [{
-						"path": "views/footer.htm",
+						"path": "partials/footer.htm",
 						"variation": {
 							"theme": "default"
 						}
@@ -24,7 +24,7 @@
 				}
 			}
 		}, {
-			"path": "views/separator.htm"
+			"path": "partials/separator.htm"
 		}]
 	}
 }
