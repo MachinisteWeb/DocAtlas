@@ -18,13 +18,13 @@ website.components = {};
         callback();
     };
 
-    publics.changeVariation = function (params, mainCallback) {
+    publics.changeVariation = function (params, next) {
         var NA = this,
             variation = params.variation;
 
         variation = website.components.componentAtlas.includeComponents.call(NA, variation, "components", "mainTag", "componentName");
 
-        mainCallback(variation);
+        next(variation);
     };
 
 }(website));
