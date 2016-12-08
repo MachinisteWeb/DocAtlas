@@ -10,8 +10,5 @@
 	"commonController": "common.js",
 	"commonVariation": "common.json",
 	"serverlessRelativePath": "./dist/",
-	"staticOptions": {
-        "maxAge": 0
-    },
 	"routes": "routes.json"
 }
