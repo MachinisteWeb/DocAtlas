@@ -2,22 +2,22 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "footer",
 				"design": "footer"
 			}
 		}, {
 			"path": "partials/footer.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/footer.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]

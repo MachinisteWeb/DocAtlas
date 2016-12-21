@@ -2,20 +2,20 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "product",
 				"design": "product",
 				"behaviors": "module-munchkin-ws.ui.Product"
 			}
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
 							"theme": "default"
@@ -25,11 +25,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
 							"theme": "default"
@@ -41,13 +41,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-small",
 							"paragraphs": 0,
 							"theme": "default"
@@ -57,11 +57,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-small",
 							"paragraphs": 0,
 							"theme": "default"
@@ -73,13 +73,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
 							"paragraphs": 4,
@@ -90,11 +90,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"variationClass": "as-small",
 							"paragraphs": 4,
@@ -107,13 +107,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"theme": "default"
 						}
@@ -122,11 +122,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/product.htm",
-						"variation": {
+						"variations": {
 							"withCarousel": "as-carousel",
 							"theme": "default"
 						}

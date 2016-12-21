@@ -2,13 +2,13 @@
 	"components": {
 		"main" : [{
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/simple.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-separator",
 							"theme": "default",
 							"components": {
@@ -19,7 +19,7 @@
 						}
 					}, {
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group",
 							"theme": "default"
 						}

@@ -2,19 +2,19 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "call-to-action",
 				"design": "call-to-action"
 			}
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group",
 							"theme": "default"
 						}
@@ -23,11 +23,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group",
 							"theme": "default"
 						}
@@ -38,13 +38,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group-center",
 							"theme": "default"
 						}
@@ -53,11 +53,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group-center",
 							"theme": "default"
 						}
@@ -68,13 +68,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]
@@ -82,11 +82,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]
@@ -96,13 +96,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group",
 							"small": true,
 							"theme": "default"
@@ -112,11 +112,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/call-to-action.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-group",
 							"small": true,
 							"theme": "default"

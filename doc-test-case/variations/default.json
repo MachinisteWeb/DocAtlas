@@ -2,13 +2,13 @@
 	"components": {
 		"main" : [{
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/simple.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{

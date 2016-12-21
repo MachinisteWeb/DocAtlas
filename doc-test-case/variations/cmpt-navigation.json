@@ -2,13 +2,13 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "navigation",
 				"design": "navigation"
 			}
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"components": {
 					"content": [{
@@ -18,11 +18,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{
@@ -37,7 +37,7 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"variationClass": "as-alternative",
 				"theme": "default",
 				"components": {
@@ -48,11 +48,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-alternative",
 							"theme": "default",
 							"components": {
@@ -68,7 +68,7 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"components": {
 					"content": [{
@@ -78,11 +78,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{
@@ -97,7 +97,7 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"variationClass": "as-centered",
 				"theme": "default",
 				"components": {
@@ -108,11 +108,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-centered",
 							"theme": "default",
 							"components": {
@@ -128,7 +128,7 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"variationClass": "as-alternative as-centered",
 				"theme": "default",
 				"components": {
@@ -139,11 +139,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-alternative as-centered",
 							"theme": "default",
 							"components": {
@@ -159,7 +159,7 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"variationClass": "as-centered",
 				"theme": "default",
 				"components": {
@@ -170,11 +170,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/navigation.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-centered",
 							"theme": "default",
 							"components": {

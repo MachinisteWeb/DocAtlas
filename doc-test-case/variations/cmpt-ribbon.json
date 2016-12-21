@@ -2,7 +2,7 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "ribbon",
 				"design": "ribbon"
 			}
@@ -10,11 +10,11 @@
 			"path": "partials/ribbon.htm"
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/ribbon.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]

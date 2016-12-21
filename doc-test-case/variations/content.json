@@ -2,7 +2,7 @@
 	"components": {
 		"main" : [{
 			"path": "partials/navigation.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"components": {
 					"content": [{
@@ -12,13 +12,13 @@
 			}
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/hero.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{
@@ -28,7 +28,7 @@
 						}
 					}, {
 						"path": "partials/simple.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{

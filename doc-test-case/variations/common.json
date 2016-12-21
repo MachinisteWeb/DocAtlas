@@ -2,23 +2,23 @@
 	"components": {
 		"head" : [{
 			"path": "partials/ribbon.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}, {
 			"path": "partials/header.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}],
 		"footer" : [{
 			"path": "partials/sn-share.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}, {
 			"path": "partials/footer.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}]

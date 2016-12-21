@@ -2,19 +2,19 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "timeline",
 				"design": "timeline"
 			}
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/timeline.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]
@@ -22,11 +22,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/timeline.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]

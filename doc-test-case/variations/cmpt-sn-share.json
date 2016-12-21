@@ -2,23 +2,23 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "sn-share",
 				"design": "sn-share"
 			}
 		}, {
 			"path": "partials/sn-share.htm",
-			"variation": {
+			"variations": {
 				"variationClass": "as-alternative",
 				"theme": "default"
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-alternative",
 							"theme": "default"
 						}
@@ -29,13 +29,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-complementary",
 							"theme": "default"
 						}
@@ -44,11 +44,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-complementary",
 							"theme": "default"
 						}
@@ -59,13 +59,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-alternative",
 							"theme": "default"
 						}
@@ -74,11 +74,11 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-alternative",
 							"theme": "default"
 						}
@@ -89,16 +89,16 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/sn-share.htm",
-			"variation": {
+			"variations": {
 				"theme": "default"
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/sn-share.htm",
-						"variation": {
+						"variations": {
 							"theme": "default"
 						}
 					}]

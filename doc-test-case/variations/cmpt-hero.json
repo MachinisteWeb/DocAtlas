@@ -2,20 +2,20 @@
 	"components": {
 		"main" : [{
 			"path": "partials/separator.htm",
-			"variation": {
+			"variations": {
 				"title": "hero",
 				"design": "hero",
 				"behaviors": "module-munchkin-ws.ui.Hero"
 			}
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/hero.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"components": {
 								"content": [{
@@ -28,17 +28,17 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/slot.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"variationClass": "as-container",
 							"components": {
 								"item1": [{
 									"path": "partials/hero.htm",
-									"variation": {
+									"variations": {
 										"theme": "default",
 										"components": {
 											"content": [{
@@ -56,13 +56,13 @@
 			"path": "partials/separator.htm"
 		}, {
 			"path": "partials/slot.htm",
-			"variation": {
+			"variations": {
 				"theme": "default",
 				"variationClass": "as-container",
 				"components": {
 					"item1": [{
 						"path": "partials/hero.htm",
-						"variation": {
+						"variations": {
 							"variationClass": "as-carousel",
 							"theme": "default",
 							"components": {
@@ -76,17 +76,17 @@
 			}
 		}, {
 			"path": "partials/code.htm",
-			"variation": {
+			"variations": {
 				"components": {
 					"code": [{
 						"path": "partials/slot.htm",
-						"variation": {
+						"variations": {
 							"theme": "default",
 							"variationClass": "as-container",
 							"components": {
 								"item1": [{
 									"path": "partials/hero.htm",
-									"variation": {
+									"variations": {
 										"variationClass": "as-carousel",
 										"theme": "default",
 										"components": {
