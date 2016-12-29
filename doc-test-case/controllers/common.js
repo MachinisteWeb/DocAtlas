@@ -13,7 +13,7 @@ website.components = {};
         	express = NA.modules.express,
         	staticOptions = { maxAge: 86400000 * 30 };
 
-        NA.httpServer.use(NA.webconfig.urlRelativeSubPath + '/assets/', express.static(path.join(NA.serverPath, NA.serverModulesRelativePath), staticOptions));
+        NA.express.use(NA.webconfig.urlRelativeSubPath + '/assets/', express.static(path.join(NA.serverPath, NA.serverModulesRelativePath), staticOptions));
 
         callback();
     };
