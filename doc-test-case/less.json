@@ -1,6 +1,4 @@
-{
-	"less": [
-		"./styles/common.less",
-		"./styles/framework.less"
-	]
-}
+[
+	"./styles/common.less",
+	"./styles/framework.less"
+]
