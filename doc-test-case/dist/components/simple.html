@@ -1340,7 +1340,7 @@ Munchkin is the dungeon experience . . . with none of that stupid roleplaying st
 			window.testCase = true;
 			System.config({
 				defaultJSExtensions: true,
-				baseURL: "http://localhost:7770/",
+				baseURL: document.getElementsByTagName("base")[0].getAttribute("href") + "/",
 				transpiler: "traceur",
 				map: {
     				"traceur": "./assets/traceur/bin/traceur",

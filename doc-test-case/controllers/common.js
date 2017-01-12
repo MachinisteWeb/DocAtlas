@@ -9,11 +9,13 @@ website.components = {};
 
 	publics.setConfigurations = function (callback) {
         var NA = this,
-        	path = NA.modules.path,
-        	express = NA.modules.express,
-        	staticOptions = { maxAge: 86400000 * 30 };
+            path = NA.modules.path,
+        	url = NA.modules.url;
 
-        NA.express.use(NA.webconfig.urlRelativeSubPath + '/assets/', express.static(path.join(NA.serverPath, NA.serverModulesRelativePath), staticOptions));
+        NA.webconfig.statics = NA.webconfig.statics || {};
+        NA.webconfig.statics["/assets/systemjs"] = url.format(path.join("/", NA.serverModulesRelativePath, "systemjs"));
+        NA.webconfig.statics["/assets/traceur"] = url.format(path.join("/", NA.serverModulesRelativePath, "traceur"));
+        NA.webconfig.statics["/assets/jquery"] = url.format(path.join("/", NA.serverModulesRelativePath, "jquery"));
 
         callback();
     };
