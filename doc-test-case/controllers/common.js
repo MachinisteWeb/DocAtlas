@@ -13,9 +13,18 @@ website.components = {};
         	url = NA.modules.url;
 
         NA.webconfig.statics = NA.webconfig.statics || {};
-        NA.webconfig.statics["/assets/systemjs"] = url.format(path.join("/", NA.serverModulesRelativePath, "systemjs"));
-        NA.webconfig.statics["/assets/traceur"] = url.format(path.join("/", NA.serverModulesRelativePath, "traceur"));
-        NA.webconfig.statics["/assets/jquery"] = url.format(path.join("/", NA.serverModulesRelativePath, "jquery"));
+        NA.webconfig.statics["/assets/systemjs"] = { 
+            path: url.format(path.join("/", NA.serverModulesRelativePath, "systemjs")),
+            output: true 
+        };
+        NA.webconfig.statics["/assets/traceur"] = { 
+            path: url.format(path.join("/", NA.serverModulesRelativePath, "traceur")),
+            output: true 
+        };
+        NA.webconfig.statics["/assets/jquery"] = { 
+            path: url.format(path.join("/", NA.serverModulesRelativePath, "jquery")),
+            output: true 
+        };
 
         callback();
     };

@@ -1,6 +1,8 @@
 {
+	"assetsCopy": true,
+	"output": true,
 	"index": true,
-	"httpPort": 7770,
+	"httpPort": 7778,
 	"less": {
 		"files": "less.json"
 	},
