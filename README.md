@@ -1,4 +1,4 @@
-# TestCaseAtlas #
+# DocAtlas #
 
 Version : 0.1
 
@@ -10,7 +10,7 @@ NodeAtlas Version minimale : 2.0.x
 
 ## Avant-propos ##
 
-TestCaseAtlas est un exemple de Documentation d'Interface Utilisateur et de Cas de Test pour maintenir des Interfaces Utilisateur pour des sites web quelque soit la techno Back-end avec [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
+DocAtlas est un exemple de Documentation d'Interface Utilisateur et de Cas de Test pour maintenir des Interfaces Utilisateur pour des sites web quelque soit la techno Back-end avec [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
 
 
 
@@ -125,7 +125,7 @@ Vous pouvez voir fonctionner ce repository à l'adresse : [https://blog.lesieur.
 
 ### Overview ###
 
-TestCaseAtlas is an example of UI Test Case and UI Documentation to manage UI for website anyway what is the technology behind with [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
+DocAtlas is an example of UI Test Case and UI Documentation to manage UI for website anyway what is the technology behind with [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
 
 
 

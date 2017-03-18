@@ -1,19 +1,19 @@
 {
-  "name": "test-case-atlas",
+  "name": "doc-atlas",
   "version": "0.1.0",
   "author": "Bruno Lesieur <bruno.lesieur@gmail.com>",
   "description": "Exemple de Documentation et de Cas de Test pour Interface Utilisateur de Site web.",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Haeresis/TestCaseAtlas.git"
+    "url": "https://github.com/Haeresis/DocAtlas.git"
   },
   "license": {
     "type": "GPL-2.0",
-    "url": "https://github.com/Haeresis/TestCaseAtlas/LICENSE"
+    "url": "https://github.com/Haeresis/DocAtlas/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/Haeresis/TestCaseAtlas/issues"
+    "url": "https://github.com/Haeresis/DocAtlas/issues"
   },
   "dependencies": {},
   "engines": {
