@@ -28,7 +28,7 @@ Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichie
 
 ## Exemple ##
 
-1. Rendez-vous sur « https://www.lesieur.name/test-case-atlas/ » puis par exemple sur « https://www.lesieur.name/test-case-atlas/products/munchkin-2.html ». Ceci représente un agencement de composant pour afficher une page de détaille représentant un « layout ».
+1. Rendez-vous sur « https://www.lesieur.name/doc-atlas/ » puis par exemple sur « https://www.lesieur.name/doc-atlas/products/munchkin-2.html ». Ceci représente un agencement de composant pour afficher une page de détaille représentant un « layout ».
 
 2. Avec F12, repérez la liste des composants utilisez grace à la classe `.ui`. Ce sont
   - ribbon
@@ -45,15 +45,15 @@ Si quelqu'un modifie les fichiers CSS ou JS dans le dossier `webapp`, les fichie
     - sn-share
   - footer
 
-3. Nous voulons plus d'information sur le `sn-share`. Nous remontons à l'adresse « https://www.lesieur.name/test-case-atlas/ » et choisissons le composant « https://www.lesieur.name/test-case-atlas/components/sn-share.html ». Nous voyons ainsi toutes les possibilités d'affichage et pour chacune un code exemple avec « Show / Hide Code ». Toutes ses variations et états sont résumé dans la Doc Design « https://www.lesieur.name/test-case-atlas/documentation/design/sn-share.html ».
+3. Nous voulons plus d'information sur le `sn-share`. Nous remontons à l'adresse « https://www.lesieur.name/doc-atlas/ » et choisissons le composant « https://www.lesieur.name/doc-atlas/components/sn-share.html ». Nous voyons ainsi toutes les possibilités d'affichage et pour chacune un code exemple avec « Show / Hide Code ». Toutes ses variations et états sont résumé dans la Doc Design « https://www.lesieur.name/doc-atlas/documentation/design/sn-share.html ».
 
-4. Il existe également une documentation JS pour chaque interface comme avec le `header` « https://www.lesieur.name/test-case-atlas/documentation/design/header.html ». On peut voir ainsi côté CSS toutes les classes de variations et d'états
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--buy.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--navigation.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--navigation--item.html »
+4. Il existe également une documentation JS pour chaque interface comme avec le `header` « https://www.lesieur.name/doc-atlas/documentation/design/header.html ». On peut voir ainsi côté CSS toutes les classes de variations et d'états
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--buy.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--navigation.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--navigation--item.html »
 
-Et côté JS avec « https://www.lesieur.name/test-case-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
+Et côté JS avec « https://www.lesieur.name/doc-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
 
 
 
@@ -109,7 +109,7 @@ Il faut lancer les fichiers « .bat » suivant :
 
 ## Exemple en ligne ##
 
-Vous pouvez voir fonctionner ce repository à l'adresse : [https://blog.lesieur.name/test-case-atlas/](https://blog.lesieur.name/test-case-atlas/).
+Vous pouvez voir fonctionner ce repository à l'adresse : [https://blog.lesieur.name/doc-atlas/](https://blog.lesieur.name/doc-atlas/).
 
 
 
@@ -143,7 +143,7 @@ If somebody update CSS and JS file in `webapp` directory, Test Case files will b
 
 ### Example ###
 
-1. Go on « https://www.lesieur.name/test-case-atlas/ » and then for example on « https://www.lesieur.name/test-case-atlas/products/munchkin-2.html ». That represent a list of component which together represent a « layout ».
+1. Go on « https://www.lesieur.name/doc-atlas/ » and then for example on « https://www.lesieur.name/doc-atlas/products/munchkin-2.html ». That represent a list of component which together represent a « layout ».
 
 2. With F12, find all components with the `.ui` class. Comonents are :
   - ribbon
@@ -160,15 +160,15 @@ If somebody update CSS and JS file in `webapp` directory, Test Case files will b
     - sn-share
   - footer
 
-3. Imagine you want more informations about `sn-share`. Go back to « https://www.lesieur.name/test-case-atlas/ » and we choose « https://www.lesieur.name/test-case-atlas/components/sn-share.html » component. All usage possibility are shown here with a code example behind « Show / Hide Code ». All variations and states are explained into Design Doc « https://www.lesieur.name/test-case-atlas/documentation/design/sn-share.html ».
+3. Imagine you want more informations about `sn-share`. Go back to « https://www.lesieur.name/doc-atlas/ » and we choose « https://www.lesieur.name/doc-atlas/components/sn-share.html » component. All usage possibility are shown here with a code example behind « Show / Hide Code ». All variations and states are explained into Design Doc « https://www.lesieur.name/doc-atlas/documentation/design/sn-share.html ».
 
-4. There is also a JS documentation for each interface like `header` « https://www.lesieur.name/test-case-atlas/documentation/design/header.html ». We will see for CSS all variations and states classes
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--buy.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--navigation.html »
-  - « https://www.lesieur.name/test-case-atlas/documentation/design/header--navigation--item.html »
+4. There is also a JS documentation for each interface like `header` « https://www.lesieur.name/doc-atlas/documentation/design/header.html ». We will see for CSS all variations and states classes
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--buy.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--navigation.html »
+  - « https://www.lesieur.name/doc-atlas/documentation/design/header--navigation--item.html »
 
-And for JS the same with « https://www.lesieur.name/test-case-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
+And for JS the same with « https://www.lesieur.name/doc-atlas/documentation/behaviors/module-munchkin-ws.ui.Header.html »
 
 
 
@@ -220,4 +220,4 @@ Run the following « .bat »:
 
 ### Online Example ###
 
-You can see this repository running at: [https://blog.lesieur.name/test-case-atlas/](https://blog.lesieur.name/test-case-atlas/).
+You can see this repository running at: [https://blog.lesieur.name/doc-atlas/](https://blog.lesieur.name/doc-atlas/).
