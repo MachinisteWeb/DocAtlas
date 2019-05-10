@@ -4,6 +4,9 @@
   "author": "Bruno Lesieur <bruno.lesieur@gmail.com>",
   "description": "Exemple de Documentation et de Cas de Test pour Interface Utilisateur de Site web.",
   "private": false,
+  "scripts": {
+    "start": "node www.lesieur.name.doc.na"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Haeresis/DocAtlas.git"
