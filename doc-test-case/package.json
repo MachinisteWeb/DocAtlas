@@ -1,14 +1,28 @@
 {
-  "name": "doc-test-case",
+  "name": "doc-atlas",
   "version": "0.2.0",
-  "description": "Webapp Non Regression Test Case",
+  "author": "Bruno Lesieur <bruno.lesieur@gmail.com>",
+  "description": "Exemple de Documentation et de Cas de Test pour Interface Utilisateur de Site web.",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Haeresis/DocAtlas.git"
+  },
+  "license": {
+    "type": "GPL-2.0",
+    "url": "https://github.com/Haeresis/DocAtlas/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/Haeresis/DocAtlas/issues"
+  },
   "dependencies": {
     "node-atlas": "^2.0.7",
     "jquery": "^3.4.1",
     "systemjs": "^3.1.6",
     "traceur": "^0.0.111"
   },
-  "scripts": {
-    "start": "node www.lesieur.name.doc.na"
-  }
+  "engines": {
+    "node": ">=0.10.10"
+  },
+  "readmeFilename": "README.md"
 }
