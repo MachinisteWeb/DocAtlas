@@ -1,0 +1,18 @@
+{
+	"cache": true,
+	"index": true,
+	"httpPort": 7778,
+ 	"variationsRelativePath": "./variations/",
+	"viewsRelativePath": "./views/",
+	"controllersRelativePath": "./controllers/",
+	"assetsRelativePath": "../webapp/src/",
+	"controller": "common.js",
+	"variation": "common.json",
+	"serverlessRelativePath": "./dist/",
+ 	"pageNotFound": "/page-inexistante/",
+ 	"httpHostname": "www.lesieur.name",
+	"urlRelativeSubPath": "doc-atlas",
+	"httpSecure": true,
+	"urlPort": 443,
+	"routes": "routes.json"
+}

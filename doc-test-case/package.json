@@ -1,11 +1,14 @@
 {
-  "name": "purina-cat-chow-test-case",
-  "version": "0.1.0",
-  "description": "Purina CatChow Webapp Non Regression Test Case",
+  "name": "doc-test-case",
+  "version": "0.2.0",
+  "description": "Webapp Non Regression Test Case",
   "dependencies": {
-    "jquery": "2.2.x",
-    "systemjs": "0.19.x",
-    "traceur": "0.0.x"
+    "node-atlas": "^2.0.7",
+    "jquery": "^3.4.1",
+    "systemjs": "^3.1.6",
+    "traceur": "^0.0.111"
+  },
+  "scripts": {
+    "start": "node www.lesieur.name.doc.na"
   }
 }
-
