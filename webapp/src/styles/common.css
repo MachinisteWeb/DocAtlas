@@ -6,7 +6,7 @@
  */
 @font-face {
   font-family: "hlmt-rounded";
-  src: url("fonts/hlmt-rounded.eot?#iefix") format("embedded-opentype"), url("fonts/hlmt-rounded.woff") format("woff"), url("fonts/hlmt-rounded.ttf") format("truetype"), url("fonts/hlmt-rounded.svg#hlmt-rounded") format("svg");
+  src: url("./fonts/hlmt-rounded.eot?#iefix") format("embedded-opentype"), url("./fonts/hlmt-rounded.woff") format("woff"), url("./fonts/hlmt-rounded.ttf") format("truetype"), url("./fonts/hlmt-rounded.svg#hlmt-rounded") format("svg");
 }
 /*@font-face {
     font-family: "Calibri Light";
@@ -217,7 +217,7 @@
   background-color: transparent;
 }
 .slot .btn-link:hover {
-  opacity: .6;
+  opacity: 0.6;
   text-decoration: none;
 }
 /**
@@ -368,7 +368,7 @@ a {
   color: #2c1200;
 }
 .slot a:hover {
-  opacity: .6;
+  opacity: 0.6;
   text-decoration: none;
 }
 table {
@@ -402,7 +402,7 @@ body {
   overflow-x: hidden;
 }
 .with-background {
-  background-image: url('images/main-background-transparency.jpg');
+  background-image: url('./images/main-background-transparency.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
