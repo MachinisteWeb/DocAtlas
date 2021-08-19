@@ -19,8 +19,8 @@
     "url": "https://github.com/Haeresis/DocAtlas/issues"
   },
   "dependencies": {
-    "node-atlas": "^2.0.7",
-    "jquery": "^3.4.1",
+    "jquery": "^3.6.0",
+    "node-atlas": "^2.0.8",
     "systemjs": "^3.1.6",
     "traceur": "^0.0.111"
   },
