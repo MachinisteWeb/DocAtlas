@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Haeresis/DocAtlas.git"
+    "url": "https://github.com/MachinisteWeb/DocAtlas.git"
   },
   "license": {
     "type": "GPL-2.0",
-    "url": "https://github.com/Haeresis/DocAtlas/LICENSE"
+    "url": "https://github.com/MachinisteWeb/DocAtlas/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/Haeresis/DocAtlas/issues"
+    "url": "https://github.com/MachinisteWeb/DocAtlas/issues"
   },
   "dependencies": {
     "jquery": "^3.6.0",

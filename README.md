@@ -10,7 +10,7 @@ NodeAtlas Version minimale : 2.0.8
 
 ## Avant-propos ##
 
-DocAtlas est un exemple de Documentation d'Interface Utilisateur et de Cas de Test pour maintenir des Interfaces Utilisateur pour des sites web quelque soit la techno Back-end avec [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
+DocAtlas est un exemple de Documentation d'Interface Utilisateur et de Cas de Test pour maintenir des Interfaces Utilisateur pour des sites web quelque soit la techno Back-end avec [NodeAtlas](https://node-atlas.js.org/).
 
 
 
@@ -61,7 +61,7 @@ Et côté JS avec « https://www.lesieur.name/doc-atlas/documentation/behaviors/
 
 ## Lancer le site en local ##
 
-Pour faire tourner le site en local, il vous faudra installer [NodeAtlas](http://haeresis.github.io/NodeAtlas/) sur votre poste de développement.
+Pour faire tourner le site en local, il vous faudra installer [NodeAtlas](https://node-atlas.js.org/) sur votre poste de développement.
 
 Déplacez vous ensuite dans le dossier :
 
@@ -125,7 +125,7 @@ Vous pouvez voir fonctionner ce repository à l'adresse : [https://blog.lesieur.
 
 ### Overview ###
 
-DocAtlas is an example of UI Test Case and UI Documentation to manage UI for website anyway what is the technology behind with [NodeAtlas](http://haeresis.github.io/NodeAtlas/).
+DocAtlas is an example of UI Test Case and UI Documentation to manage UI for website anyway what is the technology behind with [NodeAtlas](https://node-atlas.js.org/).
 
 
 
@@ -176,7 +176,7 @@ And for JS the same with « https://www.lesieur.name/doc-atlas/documentation/beh
 
 ### Run the website in local server ###
 
-To run the website in local, you must install [NodeAtlas](http://haeresis.github.io/NodeAtlas/) on your development machine.
+To run the website in local, you must install [NodeAtlas](https://node-atlas.js.org/) on your development machine.
 
 Then you move into the folder:
 
